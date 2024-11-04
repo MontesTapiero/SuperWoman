@@ -1,13 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Woman Spa</title>
+    <link href="https://db.onlinewebfonts.com/c/a831675c355af267d4dade89bf89e1f2?family=F29LT+Riwaya+Italic" rel="stylesheet">
+
+    <link href="https://db.onlinewebfonts.com/c/19124edd5c00bc200fbe44c474ad012f?family=Source+Serif+Pro" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "F29LT Riwaya Italic";
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        p {
+            font-family: "Source Serif Pro";
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .btn-reservar {
+            padding: 10px 20px;
+            background-color: #ff4b8b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero */
+        .hero {
+            background-image: url('spa-hero.jpg'); /* Placeholder */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .hero .btn-cta {
+            padding: 10px 20px;
+            background-color: #ff4b8b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Sección de servicios */
+        .services-section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+        .services-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #fff;
+            border-radius: 10px;
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .service-item img {
+            width: 30%;
+            border-radius: 10px;
+        }
+        .service-item h3 {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .service-item p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .btn-service {
+            background-color: #ff4b8b;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Servicios adicionales */
+        .extra-services {
+            display: flex;
+            gap: 15px;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .extra-services .extra-service-item {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            width: 150px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .extra-services img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .extra-services h4 {
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+        }
+        .extra-services p {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <h1>SuperWoman</h1>
-    <h2>Esto es una prueba</h2>
 
-    <p>Ensayo #1</p>
-    <p>Trabajo Spa</p>
+<!-- Encabezado -->
+<header>
+    <h1>SuperWoman</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#calificaciones">Calificaciones</a>
+    </nav>
+    <a href="#reservar" class="btn-reservar">Reservar Ahora</a>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div>
+        <h2>Bienvenidos a Super Woman</h2>
+        <p>Sumérgete en un oasis de belleza y relajación, donde nuestras expertas transformarán tus uñas, cejas y pestañas para resaltar tu mejor versión.</p>
+        <a href="#servicios" class="btn-cta">Haz clic aquí</a>
+    </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="services-section">
+    <h2>Conoce Nuestros Servicios</h2>
+    <div class="service-container">
+        <div class="service-item">
+            <img src="manicure.jpg" alt="Manicura">
+            <div>
+                <h3>¡Tus manos son tu carta de presentación!</h3>
+                <p>Desde manicuras clásicas hasta diseños personalizados y de larga duración. Haz que tus manos hablen por ti.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="eyebrows.jpg" alt="Cejas">
+            <div>
+                <h3>¡Tus cejas, el marco perfecto para tu mirada!</h3>
+                <p>Dejamos tus cejas perfectas para que tu mirada luzca expresiva y armoniosa.</p>
+                <a href="#reserva-cejas" class="btn-service">Reserva tu cita y descubre el poder...</a>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="eyelashes.jpg" alt="Pestañas">
+            <div>
+                <h3>¡Eleva tu mirada con unas pestañas perfectas!</h3>
+                <p>Haz que cada parpadeo sea inolvidable con una mirada intensa, natural o glamorosa. ¡Tú decides!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Servicios adicionales -->
+<section class="extra-services">
+    <div class="extra-service-item">
+        <img src="manicure-basic.jpg" alt="Manicura Básica">
+        <h4>Manicura Básica</h4>
+        <p>$40,000 - $80,000</p>
+    </div>
+    <div class="extra-service-item">
+        <img src="gel-polish.jpg" alt="Esmalte en gel">
+        <h4>Manicura con esmalte en gel</h4>
+        <p>$80,000 - $150,000</p>
+    </div>
+    <div class="extra-service-item">
+        <img src="acrylic-nails.jpg" alt="Uñas Acrílicas">
+        <h4>Uñas acrílicas o de gel</h4>
+        <p>$150,000 - $300,000</p>
+    </div>
+    <div class="extra-service-item">
+        <img src="permanent-polish.jpg" alt="Esmaltado Permanente">
+        <h4>Esmaltado permanente</h4>
+        <p>$70,000 - $120,000</p>
+    </div>
+</section>
+
 </body>
 </html>
