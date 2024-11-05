@@ -73,6 +73,15 @@
             text-align: center;
             padding: 20px;
         }
+        .hero .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* This ensures the image covers the entire area of the section */
+            z-index: -1; /* Ensures the image stays in the background */
+        }
         .hero h2 {
             font-size: 2.5em;
             font-weight: bold;
@@ -81,6 +90,7 @@
         .hero p {
             font-size: 1.2em;
             margin-bottom: 20px;
+            color: #fff;
         }
         .hero .btn-cta {
             padding: 10px 20px;
