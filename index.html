@@ -27,15 +27,15 @@
 
         /* Encabezado */
         header {
+            font-size: 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 10%;
             background: transparent; /* Hace que el fondo sea completamente transparente */
-            /* background-color: #fff; */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0; /* Coloca el encabezado en la parte superior */
+            position: static;
+            top: 0; /* Asegura que el encabezado se quede en la parte superior de la página */
             left: 0; /* Asegura que esté alineado al lado izquierdo */
             width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
             z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
@@ -51,7 +51,7 @@
         header nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #ff4b8b;
             font-weight: bold;
         }
         header img {
@@ -180,7 +180,8 @@
             background-color: #fff;
             padding: 10px;
             border-radius: 8px;
-            width: 150px;
+            width: 300px;
+            height: 400px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
         }
@@ -205,7 +206,7 @@
 
 <!-- Encabezado -->
 <header>
-    <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logoTransparente.jpeg" alt="logo">
+    <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logoTransparente.png" alt="logo">
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#reservas">Reservas</a>
@@ -254,28 +255,47 @@
         </div>
     </div>
 </section>
+<section class="extra-services">
 <section id="servicios" class="services-section">
     <div class="service-container">
-        <div class="service-item">
-            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Esmalteconuñas.jpg" alt="Manicura">
+        <div class="extra-service-item">
+            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/ManicureBasico.jpg" alt="Manicura Básica">
             <div>
-                <h3>¡Tus manos son tu carta de presentación!</h3>
-                <p>Desde manicuras clásicas hasta diseños personalizados y de larga duración. Haz que tus manos hablen por ti.</p>
+                <h3>Manicura Básica</h3>
+            <!-- Descripción del servicio -->
+            <p>Disfruta de una manicura básica que resalta la belleza natural de tus manos.</p>
+            <!-- Precio debajo del servicio -->
+            <p class="price"><strong>$40,000 - $80,000</strong></p> 
             </div>
         </div>
-        <div class="service-item">
-            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Cejas.jpg" alt="Cejas">
+        <div class="extra-service-item">
+            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/EsmalteenGel.jpg" alt="Esmalte en gel">
             <div>
-                <h3>¡Tus cejas, el marco perfecto para tu mirada!</h3>
-                <p>Dejamos tus cejas perfectas para que tu mirada luzca expresiva y armoniosa.</p>
-                <a href="#reserva-cejas" class="btn-service">Reserva tu cita y descubre el poder...</a>
+                <h3>Manicura con esmalte en gel</h3>
+            <!-- Descripción del servicio -->
+            <p>Disfruta de una manicura con esmalte en gel que proporciona un acabado brillante y de larga duración.</p>
+            <!-- Precio debajo del servicio -->
+            <p class="price"><strong>$80,000 - $150,000</strong></p> 
             </div>
         </div>
-        <div class="service-item">
-            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Pestañas.jpg" alt="Pestañas">
+        <div class="extra-service-item">
+            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/UñasAcrilicas.jpg" alt="Uñas Acrílicas">
             <div>
-                <h3>¡Eleva tu mirada con unas pestañas perfectas!</h3>
-                <p>Haz que cada parpadeo sea inolvidable con una mirada intensa, natural o glamorosa. ¡Tú decides!</p>
+                <h3>Uñas acrílicas o de gel</h3>
+            <!-- Descripción del servicio -->
+            <p>Déjate consentir con unas uñas resistentes, de gran durabilidad y personalizadas a tu estilo. Ya sea en acrílico o gel, ¡resalta con unas manos perfectas y sofisticadas!</p>
+            <!-- Precio debajo del servicio -->
+            <p class="price">$150,000 - $300,000</p> 
+            </div>
+        </div>
+        <div class="extra-service-item">
+            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/UñasAcrilicas.jpg" alt="Uñas Acrílicas">
+            <div>
+                <h3>Uñas acrílicas o de gel</h3>
+            <!-- Descripción del servicio -->
+            <p>Déjate consentir con unas uñas resistentes, de gran durabilidad y personalizadas a tu estilo. Ya sea en acrílico o gel, ¡resalta con unas manos perfectas y sofisticadas!</p>
+            <!-- Precio debajo del servicio -->
+            <p class="price">$150,000 - $300,000</p> 
             </div>
         </div>
     </div>
@@ -283,9 +303,7 @@
 <!-- Servicios adicionales -->
 <!-- <section class="extra-services"> -->
     <!-- <div class="extra-service-item">
-        <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/ManicureBasico.jpg" alt="Manicura Básica">
-        <h4>Manicura Básica</h4>
-        <p>$40,000 - $80,000</p>
+        
     </div>
     <div class="extra-service-item">
         <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/EsmalteenGel.jpg" alt="Esmalte en gel">
