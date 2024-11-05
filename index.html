@@ -31,13 +31,22 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 10%;
-            background-color: #fff;
+            background: transparent; /* Hace que el fondo sea completamente transparente */
+            /* background-color: #fff; */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0; /* Coloca el encabezado en la parte superior */
+            left: 0; /* Asegura que esté alineado al lado izquierdo */
+            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+            z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
         }
         header h1 {
             font-size: 1.5em;
             font-weight: bold;
             color: #333;
+        }
+        header nav {
+            margin-left: auto; /* Empuja el nav hacia la izquierda */ 
         }
         header nav a {
             margin: 0 15px;
@@ -48,6 +57,7 @@
         header img {
             max-width: 100%;
             height: auto;
+            margin-right: 20px; /* Da un espacio entre el logo y la navegación */
         }
         .btn-reservar {
             padding: 10px 20px;
@@ -62,7 +72,7 @@
 
         /* Hero */
         .hero {
-            background-image: url('spa-hero.jpg'); /* Placeholder */
+            background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/PrincipalSPA.jpg'); /* Placeholder */
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -172,6 +182,7 @@
             border-radius: 8px;
             width: 150px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
         }
         .extra-services img {
             width: 100%;
@@ -194,7 +205,7 @@
 
 <!-- Encabezado -->
 <header>
-    <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logo.jpeg" alt="logo">
+    <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logoTransparente.jpeg" alt="logo">
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#reservas">Reservas</a>
@@ -206,14 +217,14 @@
 </header>
 
 <!-- Hero Section -->
-<section class="hero">
+<nav class="hero">
     <div>
-        <!-- <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/PrincipalSPA.jpg" alt="SPA"> -->
+        
         <h2>Bienvenidos a Super Woman</h2>
         <p>Sumérgete en un oasis de belleza y relajación, donde nuestras expertas transformarán tus uñas, cejas y pestañas para resaltar tu mejor versión.</p>
         <a href="#servicios" class="btn-cta">Haz clic aquí</a>
     </div>
-</section>
+</nav>
 
 <!-- Servicios -->
 <section id="servicios" class="services-section">
@@ -243,10 +254,35 @@
         </div>
     </div>
 </section>
-
+<section id="servicios" class="services-section">
+    <div class="service-container">
+        <div class="service-item">
+            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Esmalteconuñas.jpg" alt="Manicura">
+            <div>
+                <h3>¡Tus manos son tu carta de presentación!</h3>
+                <p>Desde manicuras clásicas hasta diseños personalizados y de larga duración. Haz que tus manos hablen por ti.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Cejas.jpg" alt="Cejas">
+            <div>
+                <h3>¡Tus cejas, el marco perfecto para tu mirada!</h3>
+                <p>Dejamos tus cejas perfectas para que tu mirada luzca expresiva y armoniosa.</p>
+                <a href="#reserva-cejas" class="btn-service">Reserva tu cita y descubre el poder...</a>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Pestañas.jpg" alt="Pestañas">
+            <div>
+                <h3>¡Eleva tu mirada con unas pestañas perfectas!</h3>
+                <p>Haz que cada parpadeo sea inolvidable con una mirada intensa, natural o glamorosa. ¡Tú decides!</p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Servicios adicionales -->
-<section class="extra-services">
-    <div class="extra-service-item">
+<!-- <section class="extra-services"> -->
+    <!-- <div class="extra-service-item">
         <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/ManicureBasico.jpg" alt="Manicura Básica">
         <h4>Manicura Básica</h4>
         <p>$40,000 - $80,000</p>
@@ -266,7 +302,7 @@
         <h4>Esmaltado permanente</h4>
         <p>$70,000 - $120,000</p>
     </div>
-</section>
+</section> -->
 
 </body>
 </html>
