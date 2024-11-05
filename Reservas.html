@@ -9,27 +9,63 @@
     <link href="https://db.onlinewebfonts.com/c/19124edd5c00bc200fbe44c474ad012f?family=Source+Serif+Pro" rel="stylesheet">
 
     <style>
-        body {
-            font-family: "F29LT Riwaya Italic";
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+        body {
+            font-family: "F29LT Riwaya Italic";
+            background-color: #f9f9f9;
             color: #333;
-            background-color: #f5f5f5;
+            line-height: 1.6;
         }
         p {
             font-family: "Source Serif Pro";
         }
+        /* Encabezado */
         header {
+            font-size: 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 10%;
+            background: transparent; /* Hace que el fondo sea completamente transparente */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: static;
+            top: 0; /* Asegura que el encabezado se quede en la parte superior de la página */
+            left: 0; /* Asegura que esté alineado al lado izquierdo */
+            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+            z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
         }
         header h1 {
-            font-size: 24px;
-            margin: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        header nav {
+            margin-left: auto; /* Empuja el nav hacia la izquierda */ 
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff4b8b;
+            font-weight: bold;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Da un espacio entre el logo y la navegación */
+        }
+        .btn-reservar {
+            padding: 10px 20px;
+            background-color: #ff4b8b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
         }
         nav ul {
             display: flex;
@@ -62,29 +98,38 @@
             font-weight: bold;
         }
         .search-bar {
-            position: absolute;
-            bottom: 20px;
-            transform: translateX(252%);
+            position: fixed; /* Fija la barra de búsqueda en la pantalla */
+            top: 20px; /* Ajusta el espacio desde la parte superior de la pantalla */
+            right: 20px; /* Fija la barra en el borde derecho */
             display: flex;
             background-color: #fff;
             border-radius: 20px;
             padding: 5px 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            width: 250px; /* Puedes ajustar el ancho según lo necesites */
         }
+
         .search-bar input {
             border: none;
             outline: none;
-            padding: 10px;
-            border-radius: 20px 0 0 20px;
-            width: 250px;
+            padding: 8px;
+            font-size: 1em;
+            width: 100%; /* Hace que el input ocupe todo el espacio disponible */
         }
+
         .search-bar button {
-            background-color: #ff0077;
-            border: none;
+            background-color: #ff4b8b; /* Color del botón */
             color: white;
-            padding: 10px 20px;
-            border-radius: 0 20px 20px 0;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 50%;
             cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .search-bar button:hover {
+            background-color: #e0437a; /* Efecto hover en el botón */
         }
         .services {
             padding: 20px;
@@ -166,36 +211,34 @@
     </style>
 </head>
 <body>
-
-<header>
-    <h1>SuperWoman</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Reservas</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Calificaciones</a></li>
-            
-        </ul>
-    </nav>
-</header>
-<br>
-<li><a href="#"><img src="search-icon.png" alt="Buscar" width="20"></a></li>
-
-<div class="hero">
-    <img src="reservas.jpeg" alt="Bienvenida a Superwoman Spa">
-    <div class="hero-text"> ¡Bienvenida a Superwoman Spa! </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Buscar un servicio">
-        <button>Buscar</button>
-    </div>
-</div>
-
+    <header>
+        <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logoTransparente.png" alt="logo">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="#calificaciones">Calificaciones</a>
+        </nav>
+        <a href="#reservar" class="btn-reservar">Reservar Ahora</a>
+    </header>
+    
 <section class="services">
+   
     <h2>Servicios SuperWoman</h2>
     <div class="services-container">
         <div class="service-card">
+            <br>
+        <li><a href="#"><img src="search-icon.png" alt="Buscar" width="20"></a></li>
+    
+        <div class="hero">
+            <img src="reservas.jpeg" alt="Bienvenida a Superwoman Spa">
+            <div class="hero-text"> ¡Bienvenida a Superwoman Spa! </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar un servicio">
+                <button>Buscar</button>
+            </div>
+        </div>
             <img src="masajes.jpg" alt="Masajes">
             <p>Masajes</p>
         </div>
