@@ -1,3 +1,159 @@
+* {
+    box-sizing: border-box; /* Ajusta el tamaño de los elementos para incluir el padding y el borde en el ancho total */
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+}
+body {
+    font-family: "F29LT Riwaya Italic"; /* Define la fuente principal para el cuerpo del documento */
+    background-color: #f9f9f9; /* Color de fondo para toda la página */
+    color: #333; /* Color de texto general */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+p {
+    font-family: "Source Serif Pro"; /* Fuente específica para los párrafos */
+}
+
+/* Encabezado */
+header {
+    font-size: 24px; /* Tamaño de fuente para el encabezado */
+    display: flex; /* Define un diseño de contenedor flexible */
+    justify-content: space-between; /* Espacia los elementos en los extremos del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    padding: 20px 10%; /* Relleno alrededor del encabezado, con márgenes laterales del 10% */
+    background: transparent; /* Hace que el fondo sea completamente transparente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil debajo del encabezado */
+    position: static;
+    top: 0; /* Fija el encabezado en la parte superior de la página */
+    left: 0; /* Alinea el encabezado al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    z-index: 1000; /* Garantiza que el encabezado esté por encima de otros elementos */
+}
+header h1 {
+    font-size: 1.5em; /* Tamaño de fuente para el título en el encabezado */
+    font-weight: bold; /* Estilo de fuente en negrita */
+    color: #333; /* Color del título */
+}
+header nav {
+    margin-left: auto; /* Empuja el elemento nav hacia la izquierda */
+}
+header nav a {
+    margin: 0 15px; /* Espacio entre los enlaces de navegación */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #ff4b8b; /* Color de los enlaces de navegación */
+    font-weight: bold; /* Estilo de fuente en negrita */
+}
+header img {
+    max-width: 100%; /* Ajusta la imagen a su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin-right: 20px; /* Espacio entre el logo y la navegación */
+}
+.btn-reservar {
+    padding: 10px 20px; /* Relleno del botón */
+    background-color: #ff4b8b; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Muestra el puntero en forma de mano */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Hero */
+.hero {
+    background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/PrincipalSPA.jpg'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la sección */
+    background-position: center; /* Centra la imagen */
+    height: 60vh; /* Altura del 60% de la ventana */
+    display: flex; /* Diseño flexible */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: center; /* Alineación horizontal centrada */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Relleno de la sección */
+}
+.hero .hero-image {
+    position: absolute; /* Posiciona la imagen en relación al contenedor */
+    top: 0; /* Alineación superior */
+    left: 0; /* Alineación izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    object-fit: cover; /* Cubre toda el área del contenedor */
+    z-index: -1; /* Coloca la imagen en el fondo */
+}
+.hero h2 {
+    font-size: 2.5em; /* Tamaño de fuente para el título */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+.hero p {
+    font-size: 1.2em; /* Tamaño de fuente para el párrafo */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    color: #fff; /* Color del texto */
+}
+.hero .btn-cta {
+    padding: 10px 20px; /* Relleno del botón */
+    background-color: #ff4b8b; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Sección de servicios */
+.services-section {
+    padding: 40px 10%; /* Relleno para la sección */
+    text-align: center; /* Texto centrado */
+}
+.services-section h2 {
+    font-size: 1.8em; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del título */
+}
+.service-container {
+    display: flex; /* Contenedor flexible */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+    gap: 20px; /* Espacio entre los elementos */
+}
+.service-item {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    flex: 1 1 calc(33.333% - 20px); /* Elementos con ancho ajustable */
+    padding: 20px; /* Relleno del contenedor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    text-align: left; /* Texto alineado a la izquierda */
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Elementos centrados verticalmente */
+    gap: 20px; /* Espacio entre los elementos internos */
+}
+.service-item img {
+    width: 30%; /* Ancho del 30% del contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 100%; /* Limita el ancho al contenedor */
+}
+.service-item h3 {
+    font-size: 1.3em; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #333; /* Color del título */
+}
+.service-item p {
+    font-size: 1em; /* Tamaño de fuente */
+    color: #666; /* Color del texto */
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
+}
+.btn-service {
+    background-color: #ff4b8b; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 15px; /* Relleno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Se comporta como un bloque en línea */
+}
 /* Servicios adicionales */
 .extra-services {
     display: flex; /* Contenedor flexible */
