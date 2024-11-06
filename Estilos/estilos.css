@@ -1,764 +1,422 @@
-* {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: "F29LT Riwaya Italic";
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
+/* Servicios adicionales */
+.extra-services {
+    display: flex; /* Contenedor flexible */
+    gap: 15px; /* Espacio entre los elementos */
+    justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+    margin-top: 20px; /* Espacio superior */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+}
+.extra-services .extra-service-item {
+    text-align: center; /* Centra el texto */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px; /* Relleno dentro del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 300px; /* Ancho fijo para cada elemento */
+    height: 400px; /* Altura fija para cada elemento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra debajo del elemento */
+}
+.extra-services img {
+    width: 100%; /* Imagen ocupa el ancho completo del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+    height: auto; /* Mantiene la proporción original */
+}
+.extra-services h4 {
+    font-size: 1em; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del título */
+}
+.extra-services p {
+    font-size: 0.9em; /* Tamaño de fuente */
+    color: #666; /* Color del texto */
+}
 
-        p {
-            font-family: "Source Serif Pro";
-        }
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Relleno del footer */
+    position: relative; /* Posiciona el footer en relación a su contenedor */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    width: 100%; /* Ancho completo de la ventana */
+}
+footer a {
+    color: #ff4b8b; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espacio lateral entre enlaces */
+    font-weight: bold; /* Negrita */
+}
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+footer .social-icons img {
+    width: 30px; /* Ancho de los íconos sociales */
+    margin: 0 10px; /* Espacio entre íconos */
+}
 
-        /* Encabezado */
-        header {
-            font-size: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background: transparent; /* Hace que el fondo sea completamente transparente */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            position: static;
-            top: 0; /* Asegura que el encabezado se quede en la parte superior de la página */
-            left: 0; /* Asegura que esté alineado al lado izquierdo */
-            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
-            z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
-        }
-        header h1 {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #333;
-        }
-        header nav {
-            margin-left: auto; /* Empuja el nav hacia la izquierda */ 
-        }
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #ff4b8b;
-            font-weight: bold;
-        }
-        header img {
-            max-width: 100%;
-            height: auto;
-            margin-right: 20px; /* Da un espacio entre el logo y la navegación */
-        }
-        .btn-reservar {
-            padding: 10px 20px;
-            background-color: #ff4b8b;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* Navegación */
+nav ul {
+    display: flex; /* Lista de navegación en línea */
+    list-style: none; /* Sin viñetas en la lista */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+}
+nav ul li {
+    margin-left: 20px; /* Espacio entre los elementos de la lista */
+}
+nav ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color de los enlaces */
+}
 
-        /* Hero */
-        .hero {
-            background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/PrincipalSPA.jpg'); /* Placeholder */
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        .hero .hero-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* This ensures the image covers the entire area of the section */
-            z-index: -1; /* Ensures the image stays in the background */
-        }
-        .hero h2 {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-        .hero .btn-cta {
-            padding: 10px 20px;
-            background-color: #ff4b8b;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
+/* Imagen en Hero */
+.hero img {
+    width: 100%; /* Imagen ocupa el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción original */
+}
 
-        /* Sección de servicios */
-        .services-section {
-            padding: 40px 10%;
-            text-align: center;
-        }
-        .services-section h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            font-weight: bold;
-            color: #333;
-        }
-        .service-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .service-item {
-            background-color: #fff;
-            border-radius: 10px;
-            flex: 1 1 calc(33.333% - 20px);
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .service-item img {
-            width: 30%;
-            height: auto;
-            border-radius: 10px;
-            max-width: 100%;
-        }
-        .service-item h3 {
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        .service-item p {
-            font-size: 1em;
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .btn-service {
-            background-color: #ff4b8b;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
+/* Texto en Hero */
+.hero-text {
+    position: absolute; /* Texto sobrepuesto en la imagen */
+    top: 50%; /* Centrado verticalmente */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el texto al centro */
+    font-size: 36px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+}
 
-        /* Servicios adicionales */
-        .extra-services {
-            display: flex;
-            gap: 15px;
-            justify-content: space-around;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        .extra-services .extra-service-item {
-            text-align: center;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            width: 300px;
-            height: 400px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Barra de búsqueda */
+.search-bar {
+    position: fixed; /* Barra de búsqueda fija en pantalla */
+    top: 20px; /* Distancia desde la parte superior de la pantalla */
+    right: 20px; /* Barra al borde derecho */
+    display: flex; /* Elementos internos alineados en fila */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 5px 15px; /* Relleno dentro de la barra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra debajo de la barra */
+    z-index: 1000; /* La coloca por encima de otros elementos */
+    width: 250px; /* Ancho fijo */
+}
+.search-bar input {
+    border: none; /* Sin borde */
+    outline: none; /* Sin borde al hacer clic */
+    padding: 8px; /* Relleno en el campo de entrada */
+    font-size: 1em; /* Tamaño de fuente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+.search-bar button {
+    background-color: #ff4b8b; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 8px 15px; /* Relleno del botón */
+    border-radius: 50%; /* Botón circular */
+    cursor: pointer; /* Cursor en forma de mano */
+    margin-left: 10px; /* Espacio a la izquierda del botón */
+}
+.search-bar button:hover {
+    background-color: #e0437a; /* Color de fondo en hover */
+}
 
-        }
-        .extra-services img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            height: auto;
-        }
-        .extra-services h4 {
-            font-size: 1em;
-            font-weight: bold;
-            color: #333;
-        }
-        .extra-services p {
-            font-size: 0.9em;
-            color: #666;
-        }
-        /* Estilos para el footer */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        footer a {
-            color: #ff4b8b;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        footer .social-icons img {
-            width: 30px;
-            margin: 0 10px;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: "F29LT Riwaya Italic";
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        p {
-            font-family: "Source Serif Pro";
-        }
-        /* Encabezado */
-        header {
-            font-size: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background: transparent; /* Hace que el fondo sea completamente transparente */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            position: static;
-            top: 0; /* Asegura que el encabezado se quede en la parte superior de la página */
-            left: 0; /* Asegura que esté alineado al lado izquierdo */
-            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
-            z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
-        }
-        header h1 {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #333;
-        }
-        header nav {
-            margin-left: auto; /* Empuja el nav hacia la izquierda */ 
-        }
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #ff4b8b;
-            font-weight: bold;
-        }
-        header img {
-            max-width: 100%;
-            height: auto;
-            margin-right: 20px; /* Da un espacio entre el logo y la navegación */
-        }
-        .btn-reservar {
-            padding: 10px 20px;
-            background-color: #ff4b8b;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .hero img {
-            width: 100%;
-            height: auto;
-        }
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 36px;
-            font-weight: bold;
-        }
-        .search-bar {
-            position: fixed; /* Fija la barra de búsqueda en la pantalla */
-            top: 20px; /* Ajusta el espacio desde la parte superior de la pantalla */
-            right: 20px; /* Fija la barra en el borde derecho */
-            display: flex;
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 5px 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000; /* Asegura que esté por encima de otros elementos */
-            width: 250px; /* Puedes ajustar el ancho según lo necesites */
-        }
+/* Servicios */
+.services {
+    padding: 20px; /* Relleno de la sección */
+    text-align: center; /* Texto centrado */
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* Elementos en columna */
+    padding: 1em; /* Relleno */
+}
+.services h2 {
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+.services-container {
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Centra los elementos */
+    flex-wrap: wrap; /* Permite el ajuste en múltiples filas */
+}
+.service-card {
+    margin: 10px; /* Espacio alrededor de la tarjeta */
+    width: 120px; /* Ancho fijo */
+    text-align: center; /* Texto centrado */
+}
+.service-card img {
+    width: 100%; /* Imagen ocupa el ancho completo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+}
+.service-card p {
+    margin-top: 10px; /* Espacio superior */
+    font-weight: bold; /* Texto en negrita */
+}
+.service-details {
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* Elementos en columna */
+    align-items: center; /* Alineación centrada */
+    margin: 20px 0; /* Espacio vertical alrededor */
+}
+.service-details .detail {
+    background-color: #fff; /* Fondo blanco */
+    display: flex; /* Contenedor flexible */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido desbordado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: 10px 0; /* Espacio vertical */
+    width: 80%; /* Ancho del contenedor */
+}
+.service-details img {
+    width: 40%; /* Imagen ocupa el 40% del ancho */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Ajusta la imagen a su contenedor */
+}
+.service-text {
+    padding: 15px; /* Relleno de texto */
+    width: 60%; /* Texto ocupa el 60% del contenedor */
+}
+.service-text h3 {
+    margin: 0; /* Sin margen superior */
+    font-size: 18px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+.service-text p {
+    font-size: 14px; /* Tamaño de fuente */
+    color: #555; /* Color del texto */
+}
 
-        .search-bar input {
-            border: none;
-            outline: none;
-            padding: 8px;
-            font-size: 1em;
-            width: 100%; /* Hace que el input ocupe todo el espacio disponible */
-        }
+/* Paginación */
+.pagination {
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Centra los elementos */
+    margin: 20px 0; /* Espacio alrededor */
+}
+.pagination a {
+    margin: 0 5px; /* Espacio lateral entre enlaces */
+    padding: 8px 12px; /* Relleno de cada enlace */
+    border: 1px solid #ddd; /* Borde del enlace */
+    color: #333; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+}
+.pagination a.active {
+    background-color: #ff0077; /* Color de fondo para el enlace activo */
+    color: white; /* Color del texto del enlace activo */
+}
 
-        .search-bar button {
-            background-color: #ff4b8b; /* Color del botón */
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            margin-left: 10px;
-        }
+/* Barra de navegación */
+.navbar {
+    display: flex; /* Elementos alineados en fila */
+    justify-content: space-between; /* Espacio entre los extremos */
+    background-color: #333; /* Fondo oscuro */
+    padding: 15px 30px; /* Relleno en los extremos */
+}
+.navbar a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 20px; /* Relleno alrededor del enlace */
+}
+.navbar a:hover {
+    background-color: #444; /* Color de fondo en hover */
+    border-radius: 5px; /* Bordes redondeados al pasar el cursor */
+}
 
-        .search-bar button:hover {
-            background-color: #e0437a; /* Efecto hover en el botón */
-        }
-        .services {
-            padding: 20px;
-            text-align: center;
-        }
-        .services h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .services-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .service-card {
-            margin: 10px;
-            width: 120px;
-            text-align: center;
-        }
-        .service-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .service-card p {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        .service-details {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 0;
-        }
-        .service-details .detail {
-            background-color: #fff;
-            display: flex;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 10px 0;
-            width: 80%;
-        }
-        .service-details img {
-            width: 40%;
-            height: auto;
-            object-fit: cover;
-        }
-        .service-text {
-            padding: 15px;
-            width: 60%;
-        }
-        .service-text h3 {
-            margin: 0;
-            font-size: 18px;
-            color: #333;
-        }
-        .service-text p {
-            font-size: 14px;
-            color: #555;
-        }
-        .pagination {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .pagination a {
-            margin: 0 5px;
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .pagination a.active {
-            background-color: #ff0077;
-            color: white;
-        }
-        .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1em;
-        background-color: #fff;
-        border-bottom: 1px solid #eaeaea;
-        }
+/* Calendario */
+.calendar {
+    display: grid; /* Contenedor en cuadrícula */
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas de igual tamaño */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px; /* Relleno de la sección */
+    background-color: #f7f7f7; /* Fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+}
+.calendar .day {
+    text-align: center; /* Texto centrado */
+    padding: 15px; /* Relleno dentro del día */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+.calendar .day.today {
+    background-color: #ff4b8b; /* Fondo para el día actual */
+    color: #fff; /* Color del texto en el día actual */
+}
 
-        .logo {
-            font-weight: bold;
-        }
+/* Breadcrumb (Ruta de navegación) */
+.breadcrumb {
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 10px 0; /* Relleno vertical */
+    list-style: none; /* Sin viñetas */
+}
+.breadcrumb li {
+    color: #333; /* Color del texto */
+    font-size: 0.9em; /* Tamaño de fuente */
+}
+.breadcrumb li + li::before {
+    content: ">"; /* Separador entre elementos */
+    margin: 0 5px; /* Espacio alrededor del separador */
+    color: #999; /* Color del separador */
+}
 
-        .navbar nav a {
-            margin: 0 1em;
-            text-decoration: none;
-            color: #333;
-        }
+/* Botones */
+.button-primary {
+    background-color: #ff0077; /* Fondo principal */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno dentro del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    font-size: 1em; /* Tamaño de fuente */
+}
+.button-primary:hover {
+    background-color: #e0437a; /* Fondo en hover */
+}
+.button-secondary {
+    background-color: #333; /* Fondo secundario */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno dentro del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    font-size: 1em; /* Tamaño de fuente */
+}
+.button-secondary:hover {
+    background-color: #444; /* Fondo en hover */
+}
 
-        .reserve-btn {
-            background-color: #ff007f;
-            color: #fff;
-            padding: 0.5em 1em;
-            border: none;
-            border-radius: 20px;
-        }
+/* Formularios */
+.form-group {
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* Elementos en columna */
+    margin-bottom: 15px; /* Espacio debajo de cada grupo */
+}
+.form-group label {
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color de la etiqueta */
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 10px; /* Relleno interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #ff4b8b; /* Borde en foco */
+    outline: none; /* Sin borde adicional en foco */
+}
 
-        .breadcrumb {
-            padding: 1em;
-            color: #888;
-        }
+/* Mensajes de alerta */
+.alert {
+    padding: 15px; /* Relleno del mensaje */
+    margin-bottom: 20px; /* Espacio inferior */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #fff; /* Color del texto */
+}
+.alert-success {
+    background-color: #28a745; /* Fondo de éxito */
+}
+.alert-warning {
+    background-color: #ffc107; /* Fondo de advertencia */
+}
+.alert-danger {
+    background-color: #dc3545; /* Fondo de error */
+}
+.alert-info {
+    background-color: #17a2b8; /* Fondo de información */
+}
 
-        h1, h2 {
-            color: #333;
-        }
+/* Tarjetas */
+.card {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Relleno */
+    margin: 10px; /* Margen alrededor de la tarjeta */
+}
+.card-title {
+    font-size: 1.2em; /* Tamaño de fuente del título */
+    font-weight: bold; /* Título en negrita */
+    margin-bottom: 10px; /* Espacio inferior del título */
+    color: #333; /* Color del título */
+}
+.card-content {
+    font-size: 0.9em; /* Tamaño de fuente del contenido */
+    color: #666; /* Color del texto */
+}
+.card-footer {
+    text-align: right; /* Alineación a la derecha */
+    margin-top: 15px; /* Espacio superior */
+}
+.card-footer a {
+    color: #ff4b8b; /* Color del enlace en el footer */
+    text-decoration: none; /* Sin subrayado */
+}
 
-        .calendar {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 5px;
-            padding: 1em;
-        }
+/* Media queries para adaptabilidad */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Elementos en columna en pantallas pequeñas */
+        align-items: center; /* Centrados horizontalmente */
+    }
+    .extra-services {
+        flex-direction: column; /* Elementos en columna */
+    }
+    .services-container {
+        flex-direction: column; /* Elementos en columna */
+    }
+    .service-details {
+        flex-direction: column; /* Elementos en columna */
+    }
+}
 
-        .day {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
+/* Estilo básico para la tabla */
+table {
+    width: 60%; /* Ancho de la tabla en el 60% del contenedor */
+    height: 20px; /* Altura mínima */
+    border-collapse: collapse; /* Elimina los espacios entre celdas */
+    margin: 50px auto 0px auto; /* Centra la tabla horizontalmente y le da margen superior */
+    font-family: Arial, sans-serif; /* Fuente de la tabla */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+th, td {
+    border: 1px solid #ddd; /* Borde claro alrededor de cada celda */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 10px; /* Relleno interno en las celdas */
+    font-size: 14px; /* Tamaño de fuente */
+}
+th {
+    background-color: #e0437a; /* Color de fondo de las celdas de encabezado */
+    color: white; /* Texto blanco en el encabezado */
+}
+td {
+    background-color: #60a3bc; /* Fondo de las celdas de datos */
+    color: #e0437a; /* Color del texto */
+    width: 150%; /* Ancho específico */
+}
 
-        .day.selected {
-            background-color: #ff007f;
-            color: #fff;
-        }
+/* Asegura que los días y horarios se distribuyan de forma apropiada */
+td span {
+    display: inline-table; /* Los elementos internos se organizan en tabla */
+}
 
-        .services {
-            display: flex;
-            flex-direction: column;
-            padding: 1em;
-        }
+/* Estilo para las filas alternadas */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo claro para filas pares */
+}
 
-        .service-option {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em 0;
-            border-bottom: 1px solid #eaeaea;
-        }
+/* Resalta la fila al pasar el ratón */
+tr:hover {
+    background-color: #60a3bc; /* Fondo azul en hover */
+    color: #fff; /* Texto blanco en hover */
+}
 
-        .service-option span {
-            display: block;
-        }
 
-        .actions {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 1em;
-        }
 
-        .add-service, .continue {
-            background-color: #ff007f;
-            color: #fff;
-            padding: 0.5em 1em;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-        /* Estilos para el footer */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        footer a {
-            color: #ff4b8b;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        footer .social-icons img {
-            width: 30px;
-            margin: 0 10px;
-        }
-        body {
-            font-family: "F29LT Riwaya Italic";
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        p {
-            font-family: "Source Serif Pro";
-        }
-        /* Encabezado */
-        header {
-            font-size: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background: transparent; /* Hace que el fondo sea completamente transparente */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            position: static;
-            top: 0; /* Asegura que el encabezado se quede en la parte superior de la página */
-            left: 0; /* Asegura que esté alineado al lado izquierdo */
-            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
-            z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
-        }
-        header h1 {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #333;
-        }
-        header nav {
-            margin-left: auto; /* Empuja el nav hacia la izquierda */ 
-        }
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #ff4b8b;
-            font-weight: bold;
-        }
-        header img {
-            max-width: 100%;
-            height: auto;
-            margin-right: 20px; /* Da un espacio entre el logo y la navegación */
-        }
-        .btn-reservar {
-            padding: 10px 20px;
-            background-color: #ff4b8b;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .hero img {
-            width: 100%;
-            height: auto;
-        }
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 36px;
-            font-weight: bold;
-        }
-        .search-bar {
-            position: fixed; /* Fija la barra de búsqueda en la pantalla */
-            top: 20px; /* Ajusta el espacio desde la parte superior de la pantalla */
-            right: 20px; /* Fija la barra en el borde derecho */
-            display: flex;
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 5px 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000; /* Asegura que esté por encima de otros elementos */
-            width: 250px; /* Puedes ajustar el ancho según lo necesites */
-        }
 
-        .search-bar input {
-            border: none;
-            outline: none;
-            padding: 8px;
-            font-size: 1em;
-            width: 100%; /* Hace que el input ocupe todo el espacio disponible */
-        }
-
-        .search-bar button {
-            background-color: #ff4b8b; /* Color del botón */
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            margin-left: 10px;
-        }
-
-        .search-bar button:hover {
-            background-color: #e0437a; /* Efecto hover en el botón */
-        }
-        .services {
-            padding: 20px;
-            text-align: center;
-        }
-        .services h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .services-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .service-card {
-            margin: 10px;
-            width: 120px;
-            text-align: center;
-        }
-        .service-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .service-card p {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        .service-details {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 0;
-        }
-        .service-details .detail {
-            background-color: #fff;
-            display: flex;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 10px 0;
-            width: 80%;
-        }
-        .service-details img {
-            width: 40%;
-            height: auto;
-            object-fit: cover;
-        }
-        .service-text {
-            padding: 15px;
-            width: 60%;
-        }
-        .service-text h3 {
-            margin: 0;
-            font-size: 18px;
-            color: #333;
-        }
-        .service-text p {
-            font-size: 14px;
-            color: #555;
-        }
-        .pagination {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .pagination a {
-            margin: 0 5px;
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .pagination a.active {
-            background-color: #ff0077;
-            color: white;
-        }
-        /* Estilo básico para la tabla */
-        table {
-            width: 60%;
-            height: 20px;
-            border-collapse: collapse;
-            margin: 50px auto 0px auto;
-            font-family: Arial, sans-serif;
-            cursor: pointer;            
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            text-align: left;
-            padding: 10px;
-            font-size: 14px;
-        }
-
-        th {
-            background-color: #e0437a;
-            color: white;
-        }
-
-        td {
-            background-color: #60a3bc;
-            color: #e0437a;
-            width: 150%;
-        }
-
-        /* Asegura que los días y horarios se distribuyan de forma apropiada */
-        td span {
-            display: inline-table;
-        }
-
-        /* Estilo para las filas alternadas */
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        /* Resaltar la fila al pasar el ratón */
-        tr:hover {
-            background-color: #60a3bc;
-            color: #60a3bc
-        }
 
 
