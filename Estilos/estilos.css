@@ -1,0 +1,764 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "F29LT Riwaya Italic";
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        p {
+            font-family: "Source Serif Pro";
+        }
+
+        /* Encabezado */
+        header {
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: transparent; /* Hace que el fondo sea completamente transparente */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: static;
+            top: 0; /* Asegura que el encabezado se quede en la parte superior de la página */
+            left: 0; /* Asegura que esté alineado al lado izquierdo */
+            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+            z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
+        }
+        header h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        header nav {
+            margin-left: auto; /* Empuja el nav hacia la izquierda */ 
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff4b8b;
+            font-weight: bold;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Da un espacio entre el logo y la navegación */
+        }
+        .btn-reservar {
+            padding: 10px 20px;
+            background-color: #ff4b8b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero */
+        .hero {
+            background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/PrincipalSPA.jpg'); /* Placeholder */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* This ensures the image covers the entire area of the section */
+            z-index: -1; /* Ensures the image stays in the background */
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .hero .btn-cta {
+            padding: 10px 20px;
+            background-color: #ff4b8b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Sección de servicios */
+        .services-section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+        .services-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #fff;
+            border-radius: 10px;
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .service-item img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+        .service-item h3 {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .service-item p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .btn-service {
+            background-color: #ff4b8b;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Servicios adicionales */
+        .extra-services {
+            display: flex;
+            gap: 15px;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .extra-services .extra-service-item {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            width: 300px;
+            height: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        }
+        .extra-services img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            height: auto;
+        }
+        .extra-services h4 {
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+        }
+        .extra-services p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        /* Estilos para el footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ff4b8b;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "F29LT Riwaya Italic";
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        p {
+            font-family: "Source Serif Pro";
+        }
+        /* Encabezado */
+        header {
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: transparent; /* Hace que el fondo sea completamente transparente */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: static;
+            top: 0; /* Asegura que el encabezado se quede en la parte superior de la página */
+            left: 0; /* Asegura que esté alineado al lado izquierdo */
+            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+            z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
+        }
+        header h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        header nav {
+            margin-left: auto; /* Empuja el nav hacia la izquierda */ 
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff4b8b;
+            font-weight: bold;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Da un espacio entre el logo y la navegación */
+        }
+        .btn-reservar {
+            padding: 10px 20px;
+            background-color: #ff4b8b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .search-bar {
+            position: fixed; /* Fija la barra de búsqueda en la pantalla */
+            top: 20px; /* Ajusta el espacio desde la parte superior de la pantalla */
+            right: 20px; /* Fija la barra en el borde derecho */
+            display: flex;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 5px 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            width: 250px; /* Puedes ajustar el ancho según lo necesites */
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            font-size: 1em;
+            width: 100%; /* Hace que el input ocupe todo el espacio disponible */
+        }
+
+        .search-bar button {
+            background-color: #ff4b8b; /* Color del botón */
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .search-bar button:hover {
+            background-color: #e0437a; /* Efecto hover en el botón */
+        }
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            margin: 10px;
+            width: 120px;
+            text-align: center;
+        }
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .service-card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .service-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .service-details .detail {
+            background-color: #fff;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px 0;
+            width: 80%;
+        }
+        .service-details img {
+            width: 40%;
+            height: auto;
+            object-fit: cover;
+        }
+        .service-text {
+            padding: 15px;
+            width: 60%;
+        }
+        .service-text h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .service-text p {
+            font-size: 14px;
+            color: #555;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .pagination a {
+            margin: 0 5px;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .pagination a.active {
+            background-color: #ff0077;
+            color: white;
+        }
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        background-color: #fff;
+        border-bottom: 1px solid #eaeaea;
+        }
+
+        .logo {
+            font-weight: bold;
+        }
+
+        .navbar nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .reserve-btn {
+            background-color: #ff007f;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .breadcrumb {
+            padding: 1em;
+            color: #888;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            padding: 1em;
+        }
+
+        .day {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .day.selected {
+            background-color: #ff007f;
+            color: #fff;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+        }
+
+        .service-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .service-option span {
+            display: block;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1em;
+        }
+
+        .add-service, .continue {
+            background-color: #ff007f;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        /* Estilos para el footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ff4b8b;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        body {
+            font-family: "F29LT Riwaya Italic";
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        p {
+            font-family: "Source Serif Pro";
+        }
+        /* Encabezado */
+        header {
+            font-size: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: transparent; /* Hace que el fondo sea completamente transparente */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: static;
+            top: 0; /* Asegura que el encabezado se quede en la parte superior de la página */
+            left: 0; /* Asegura que esté alineado al lado izquierdo */
+            width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+            z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
+        }
+        header h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        header nav {
+            margin-left: auto; /* Empuja el nav hacia la izquierda */ 
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff4b8b;
+            font-weight: bold;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Da un espacio entre el logo y la navegación */
+        }
+        .btn-reservar {
+            padding: 10px 20px;
+            background-color: #ff4b8b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .search-bar {
+            position: fixed; /* Fija la barra de búsqueda en la pantalla */
+            top: 20px; /* Ajusta el espacio desde la parte superior de la pantalla */
+            right: 20px; /* Fija la barra en el borde derecho */
+            display: flex;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 5px 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            width: 250px; /* Puedes ajustar el ancho según lo necesites */
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            font-size: 1em;
+            width: 100%; /* Hace que el input ocupe todo el espacio disponible */
+        }
+
+        .search-bar button {
+            background-color: #ff4b8b; /* Color del botón */
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .search-bar button:hover {
+            background-color: #e0437a; /* Efecto hover en el botón */
+        }
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            margin: 10px;
+            width: 120px;
+            text-align: center;
+        }
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .service-card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .service-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .service-details .detail {
+            background-color: #fff;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px 0;
+            width: 80%;
+        }
+        .service-details img {
+            width: 40%;
+            height: auto;
+            object-fit: cover;
+        }
+        .service-text {
+            padding: 15px;
+            width: 60%;
+        }
+        .service-text h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .service-text p {
+            font-size: 14px;
+            color: #555;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .pagination a {
+            margin: 0 5px;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .pagination a.active {
+            background-color: #ff0077;
+            color: white;
+        }
+        /* Estilo básico para la tabla */
+        table {
+            width: 60%;
+            height: 20px;
+            border-collapse: collapse;
+            margin: 50px auto 0px auto;
+            font-family: Arial, sans-serif;
+            cursor: pointer;            
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #e0437a;
+            color: white;
+        }
+
+        td {
+            background-color: #60a3bc;
+            color: #e0437a;
+            width: 150%;
+        }
+
+        /* Asegura que los días y horarios se distribuyan de forma apropiada */
+        td span {
+            display: inline-table;
+        }
+
+        /* Estilo para las filas alternadas */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Resaltar la fila al pasar el ratón */
+        tr:hover {
+            background-color: #60a3bc;
+            color: #60a3bc
+        }
+
+
