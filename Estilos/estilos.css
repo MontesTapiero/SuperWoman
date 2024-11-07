@@ -99,28 +99,25 @@ header img {
     cursor: pointer; /* Cursor en forma de mano */
     text-decoration: none; /* Sin subrayado */
 }
-
-/* Jungla */
+/* Contenedor Jungla */
 .jungla {
-    background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/nosotros.jpg'); /* Imagen de fondo */
-    background-size: cover; /* La imagen cubre toda la sección */
-    background-position: center; /* Centra la imagen */
-    height: 60vh; /* Altura del 60% de la ventana */
-    display: flex; /* Diseño flexible */
-    align-items: center; /* Alineación vertical centrada */
-    justify-content: center; /* Alineación horizontal centrada */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
     color: #fff; /* Color del texto */
     text-align: center; /* Texto centrado */
-    padding: 20px; /* Relleno de la sección */
+    padding: 20px; /* Relleno alrededor */
+    height: 60vh; /* Altura de la sección */
+    background-color: #fff; /* Color de fondo */
+    
 }
+/* Imagen de la Jungla */
 .jungla .jungla-image {
-    position: absolute; /* Posiciona la imagen en relación al contenedor */
-    top: 0; /* Alineación superior */
-    left: 0; /* Alineación izquierda */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    object-fit: cover; /* Cubre toda el área del contenedor */
-    z-index: -1; /* Coloca la imagen en el fondo */
+    width: 60%; /* Ajusta el ancho de la imagen al 60% del contenedor */
+    max-width: 800px; /* Ancho máximo para pantallas grandes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Ajusta la imagen */
+    border-radius: 8px; /* Bordes redondeados, opcional */
 }
 .jungla h2 {
     font-size: 2.5em; /* Tamaño de fuente para el título */
