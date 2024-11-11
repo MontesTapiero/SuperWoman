@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página no encontrada | Super Woman</title>
+    <style>
+        /* Estilos de pantalla completa y cuerpo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body, html {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: #fff;
+        }
+        
+        /* Contenedor principal */
+        .container {
+            width: 100%;
+            display: flex;
+            height: 100%;
+        }
+        
+        /* Sección izquierda: imagen de fondo */
+        .left {
+            background-image: url('https://img.freepik.com/fotos-premium/relajante-manicura-pedicura-rosas-flor-orquidea_1111209-29151.jpg?w=740'); /* URL de una imagen de spa relajante */
+            background-size: cover;
+            background-position: center;
+            width: 80%;
+            height: 100%;
+        }
+        
+        /* Sección derecha: mensaje de error */
+        .right {
+            background-color: #f2a0d5;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Estilo de texto */
+        h1 {
+            font-size: 6rem;
+            margin-bottom: 10px;
+            color: #D948a6;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #ffe6f0;
+        }
+        
+        /* Botón de regreso */
+        .home-btn {
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #D948a6;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .home-btn:hover {
+            background-color: #ffe6f0;
+            color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sección izquierda con imagen -->
+        <div class="left"></div>
+        
+        <!-- Sección derecha con mensaje -->
+        <div class="right">
+            <h1>404</h1>
+            <p>Oh no! Parece que te perdiste...</p>
+            <p>Relájate, respira profundo y regresa al paraíso de</p><br>
+            <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logoTransparente.png" alt="logo" width="300vh">
+            <a href="Inicio.html" class="home-btn">Volver al inicio</a>
+        </div>
+    </div>
+</body>
+</html>

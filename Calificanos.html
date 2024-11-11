@@ -7,19 +7,89 @@
     <link href="https://db.onlinewebfonts.com/c/a831675c355af267d4dade89bf89e1f2?family=F29LT+Riwaya+Italic" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/19124edd5c00bc200fbe44c474ad012f?family=Source+Serif+Pro" rel="stylesheet">
     <link rel="stylesheet" href="Estilos/estilos.css">
+
+    <style>
+        
+        /* Sección de estrellas */
+        .rating {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        .rating label {
+            font-size: 3em;
+            color: #ffd1e8;
+            cursor: pointer;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .rating label:hover,
+        .rating label.selected {
+            color: #ff6699;
+            transform: scale(1.3);
+        }
+
+        /* Campo de comentarios */
+        textarea {
+            width: 80%;
+            max-width: 800px;
+            padding: 15px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1.8s ease-in-out;
+        }
+
+        /* Botón de envío */
+        button {
+            padding: 15px 30px;
+            font-size: 1.3em;
+            color: #fff;
+            background-color: #d6249f;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #b31f7e;
+            transform: scale(1.05);
+        }
+
+        /* Mensaje de agradecimiento */
+        .thank-you-message {
+            display: none;
+            font-size: 1.4em;
+            color: #fff;
+            margin-top: 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+    
+    </style>
 </head>
 <body>
     <header>
-        <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logoTransparente.png" alt="logo">
+        <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logoTransparente.png" alt="logo" width="160vh">
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="reservas.html">Reservas</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="calificaciones.html">Calificaciones</a>
+            <a href="Inicio.html">Inicio</a>
+            <a href="Reservas.html">Reservas</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="Calificanos.html">Califícanos</a>
         </nav>
         <a href="#reservar" class="btn-reservar">Reservar Ahora</a>
     </header>
+    <section>
     <h1>¡Califícanos!</h1>
     <p>Tu opinión nos ayuda a mejorar la experiencia en Super Woman Spa.</p>
 
@@ -33,7 +103,7 @@
     </div>
 
     <!-- Comentario del cliente -->
-    <textarea id="comment" rows="4" placeholder="Cuéntanos tus sugerencias o comentarios..."></textarea>
+    <textarea id="comment" rows="4" placeholder="Cuéntanos tus sugerencias o comentarios..."></textarea><br><br>
 
     <!-- Botón para enviar -->
     <button onclick="submitRating()">Enviar Calificación</button>
@@ -42,6 +112,7 @@
     <div class="thank-you-message" id="thankYouMessage">
         ¡Gracias por tu calificación! 🌸
     </div>
+    </section>
 
     <script>
         // JavaScript para captura de estrellas y envío de calificación
@@ -84,5 +155,26 @@
             }
         }
     </script>
+
+<footer class="footer">
+    <a href="#">Acerca de nosotros</a>
+    <a href="#">Treatments</a>
+    <a href="#">Día de SPA</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Descuentos</a>
+    <a href="#">Comprar</a>
+    <a href="#">Suscriptores</a>
+    <a href="#">Ubicación</a>
+    <a href="#">Contáctenos</a>
+</footer>
+
+<div class="social-icons">
+    <a href="#">&#x1F30E;</a>
+    <a href="#">&#x1F4F7;</a>
+    <a href="#">&#x1F4E7;</a>
+</div>
+
+<p style="text-align: center; margin: 20px 0;">&copy;2024 SuperWoman</p>
+
 </body>
 </html>
