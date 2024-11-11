@@ -61,14 +61,14 @@ header img {
 /* Hero */
 .hero {
 
-    background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/PrincipalSPA.jpg'); /* Imagen de fondo */
+    background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/ImagenPrincipal.jpg'); /* Imagen de fondo */
     background-size: cover; /* La imagen cubre toda la sección */
     background-position: center; /* Centra la imagen */
     height: 60vh; /* Altura del 60% de la ventana */
     display: flex; /* Diseño flexible */
     align-items: center; /* Alineación vertical centrada */
     justify-content: center; /* Alineación horizontal centrada */
-    color: #fff; /* Color del texto */
+    color: #D948A6; /* Color del texto */
     text-align: center; /* Texto centrado */
     padding: 20px; /* Relleno de la sección */
 }
