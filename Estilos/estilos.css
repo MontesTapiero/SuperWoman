@@ -68,7 +68,7 @@ header img {
     display: flex; /* Diseño flexible */
     align-items: center; /* Alineación vertical centrada */
     justify-content: center; /* Alineación horizontal centrada */
-    color: #D948A6; /* Color del texto */
+    color: #30618C; /* Color del texto */
     text-align: center; /* Texto centrado */
     padding: 10px; /* Relleno de la sección */
 }
@@ -89,7 +89,7 @@ header img {
 .hero p {
     font-size: 1.2em; /* Tamaño de fuente para el párrafo */
     margin-bottom: 20px; /* Espacio debajo del párrafo */
-    color: #D948A6; /* Color del texto */
+    color: #30618C; /* Color del texto */
 }
 .hero .btn-cta {
     padding: 10px 20px; /* Relleno del botón */
@@ -238,7 +238,7 @@ footer {
     width: 100%; /* Ancho completo de la ventana */
 }
 footer a {
-    color: #D948A6; /* Color de los enlaces */
+    color: #F2A0D5; /* Color de los enlaces */
     text-decoration: none; /* Sin subrayado */
     margin: 0 10px; /* Espacio lateral entre enlaces */
     font-weight: bold; /* Negrita */
