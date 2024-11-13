@@ -1,0 +1,49 @@
+body {
+    font-family: "F29LT Riwaya Italic"; /* Define la fuente principal para el cuerpo del documento */
+    background-color: #f9f9f9; /* Color de fondo para toda la página */
+    color: #333; /* Color de texto general */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+p {
+    font-family: "Source Serif Pro"; /* Fuente específica para los párrafos */
+}
+header{
+    font-size: 24px; /* Tamaño de fuente para el encabezado */
+    padding: 0px 10px; /* Relleno alrededor del encabezado, con márgenes laterales del 10% */
+}
+
+.flex-container {
+    
+}
+.flex-container ul{
+    text-align: end;
+
+}
+.flex-container li {
+    margin: 0 10px; /* Espacio entre los enlaces de navegación */
+    font-weight: bold; /* Texto en negrita */
+    display: inline;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ff4b8b;
+}
+
+.flex-container img {
+    position: absolute; /*posición absoluta*/
+    top: 0%; /*posición en la parte superior*/
+    left: 20px; /*posición en la parte izquierda*/
+    height: 150px; /*altura de la imagen*/
+}
+    
+.btn-reservar{
+    padding: 10px 8px; /* Relleno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #ff4b8b; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    cursor: pointer; /* Muestra el puntero en forma de mano */
+    font-weight: bold; /* Texto en negrita */
+}
