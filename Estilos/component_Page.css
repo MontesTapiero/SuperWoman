@@ -1,0 +1,568 @@
+* {
+    box-sizing: border-box;
+    /* Ajusta el tamaño de los elementos para incluir el padding y el borde en el ancho total */
+    margin: 0;
+    /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0;
+    /* Elimina el relleno predeterminado de todos los elementos */
+}
+
+body {
+    font-family: "Source Serif Pro";
+    /* Fuente específica para los párrafos */
+    background-color: #f9f9f9;
+    /* Color de fondo para toda la página */
+    color: #30618C;
+    /* Color de texto general */
+    line-height: 1.6;
+    /* Altura de línea para mejorar la legibilidad */
+}
+
+p {
+    font-family: "Source Serif Pro";
+    /* Fuente específica para los párrafos */
+}
+
+/* Encabezado */
+header {
+    font-size: 24px;
+    /* Tamaño de fuente para el encabezado */
+    display: flex;
+    /* Define un diseño de contenedor flexible */
+    justify-content: space-between;
+    /* Espacia los elementos en los extremos del contenedor */
+    align-items: center;
+    /* Alinea verticalmente los elementos al centro */
+    padding: 20px 10%;
+    /* Relleno alrededor del encabezado, con márgenes laterales del 10% */
+    background: transparent;
+    /* Hace que el fondo sea completamente transparente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil debajo del encabezado */
+    position: static;
+    top: 0;
+    /* Fija el encabezado en la parte superior de la página */
+    left: 0;
+    /* Alinea el encabezado al borde izquierdo */
+    width: 100%;
+    /* Ocupa todo el ancho de la ventana */
+    z-index: 1000;
+    /* Garantiza que el encabezado esté por encima de otros elementos */
+}
+
+header h1 {
+    font-size: 1.5em;
+    /* Tamaño de fuente para el título en el encabezado */
+    font-weight: bold;
+    /* Estilo de fuente en negrita */
+    color: #30618C;
+    /* Color del título */
+}
+
+/* Estilos del menú y el botón hamburguesa */
+
+/* En dispositivos grandes (por defecto, el menú está visible) */
+header nav {
+    display: flex;
+    /* El menú de navegación estará en línea horizontal */
+    margin-left: auto;
+    /* Empuja el nav a la derecha */
+}
+
+header nav a {
+    margin: 0 15px;
+    /* Espacio entre los enlaces de navegación */
+    text-decoration: none;
+    color: #D948A6;
+    font-weight: bold;
+}
+
+/* El botón hamburguesa está oculto en pantallas grandes */
+.menu-toggle {
+    display: none;
+    /* Oculta el botón hamburguesa por defecto */
+    flex-direction: column;
+    /* Las barras de hamburguesa se apilan */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    /* Ancho de cada barra */
+    height: 4px;
+    /* Alto de cada barra */
+    background-color: #D948A6;
+    /* Color de las barras */
+    margin: 5px 0;
+    /* Espaciado entre las barras */
+}
+
+header img {
+    max-width: 100%;
+    /* Ajusta la imagen a su contenedor */
+    height: auto;
+    /* Mantiene la proporción original de la imagen */
+    margin-right: 20px;
+    /* Espacio entre el logo y la navegación */
+}
+
+.btn-reservar {
+    padding: 10px 20px;
+    /* Relleno del botón */
+    background-color: #D948A6;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Elimina el borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Muestra el puntero en forma de mano */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Source Serif Pro";
+    /* Fuente específica para los titulos y subtitulos */
+}
+
+.img-Principal {
+    background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/ImagenPrincipal.jpeg');
+    /* Imagen de fondo */
+    /* background-size: cover; La imagen cubre toda la sección */
+    background-position: center;
+    /* Centra la imagen */
+    height: 70vh;
+    /* Altura del 60% de la ventana */
+    display: flex;
+    /* Diseño flexible */
+    align-items: center;
+    /* Alineación vertical centrada */
+    justify-content: center;
+    /* Alineación horizontal centrada */
+    color: #30618C;
+    /* Color del texto */
+    text-align: center;
+    /* Texto centrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+    gap: 30px;
+}
+
+.img-Principal p {
+    font-size: 36px;
+    /* Tamaño de fuente para el encabezado */
+    text-align: center
+        /* Centra el texto */
+}
+
+
+
+.img-Principal .btn-clicaqui {
+    padding: 10px 20px;
+    /* Relleno del botón */
+    background-color: #F2A0D5;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Elimina el borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Muestra el puntero en forma de mano */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+h1 {
+    font-size: 60px;
+    /* Tamaño de fuente para el encabezado */
+    font-weight: bold;
+    /* Hace que el texto esté en negrita */
+}
+
+h2 {
+    font-size: 40px;
+    /* Tamaño de fuente para el encabezado */
+    font-weight: bold;
+    /* Hace que el texto esté en negrita */
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    /* Tamaño de fuente para el encabezado */
+    font-weight: bold;
+    /* Hace que el texto esté en negrita */
+    text-align: center;
+    margin-top: 10px;
+    /* Margen superior de 10px */
+    margin-bottom: 30px;
+    /* Espacio en la parte inferior si lo deseas */
+    margin-left: 20px;
+    /* Espacio a la izquierda si lo deseas */
+    margin-right: 20px;
+    /* Espacio a la derecha si lo deseas */
+}
+
+/* Sección de servicios */
+.services-section {
+    padding: 40px 10%;
+    /* Relleno para la sección */
+    text-align: center;
+    /* Texto centrado */
+    width: auto;
+    height: auto;
+}
+
+.service-container {
+    width: 100%;
+    display: flex;
+    /* Contenedor flexible */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en múltiples filas */
+    gap: 20px;
+    /* Espacio entre los elementos */
+    justify-content: center;
+}
+
+.service-item {
+    width: 100%;
+    background-color: #fff;
+    /* Fondo blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    flex: 1 1 calc(33.333% - 20px);
+    /* Elementos con ancho ajustable */
+    padding: 10px;
+    /* Relleno del contenedor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra del contenedor */
+    text-align: left;
+    /* Texto alineado a la izquierda */
+    display: flex;
+    /* Contenedor flexible */
+    align-items: center;
+    /* Elementos centrados verticalmente */
+    gap: 10px;
+    /* Espacio entre los elementos internos */
+}
+
+.service-item img {
+    width: 30%;
+    /* Ancho del 30% del contenedor */
+    height: auto;
+    /* Mantiene la proporción */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    max-width: 100%;
+    /* Limita el ancho al contenedor */
+}
+
+.services-section h2 {
+    font-size: 1.8em;
+    /* Tamaño de fuente */
+    margin-bottom: 20px;
+    /* Espacio debajo del título */
+    font-weight: bold;
+    /* Negrita */
+    color: #30618C;
+    /* Color del título */
+}
+
+.service-item h3 {
+    font-size: 1rem;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Negrita */
+    margin-bottom: 10px;
+    /* Espacio debajo del título */
+    color: #30618C;
+    /* Color del título */
+    align-items: flex-start;
+}
+
+.service-item p {
+    font-size: 1em;
+    /* Tamaño de fuente */
+    color: #30618C;
+    /* Color del texto */
+    margin-bottom: 10px;
+    /* Espacio debajo del párrafo */
+}
+
+/* Servicios adicionales */
+.extra-services {
+    display: flex;
+    /* Contenedor flexible */
+    gap: 50px;
+    /* Espacio entre los elementos */
+    justify-content: center;
+    /* Distribuye los elementos de manera uniforme */
+    margin-top: 20px;
+    /* Espacio superior */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en varias filas si es necesario */
+}
+
+.extra-services .extra-service-item {
+    text-align: center;
+    /* Centra el texto */
+    justify-content: center;
+    background-color: #fff;
+    /* Fondo blanco */
+    padding: 10px;
+    /* Relleno dentro del contenedor */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    width: 300px;
+    /* Ancho fijo para cada elemento */
+    height: 280px;
+    /* Altura fija para cada elemento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra debajo del elemento */
+    margin: 20px;
+    /* Espacio de 20px alrededor de cada elemento */
+}
+
+.extra-service-item img {
+    width: 100%;
+    /* Imagen ocupa el ancho completo del contenedor */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    margin-bottom: 10px;
+    /* Espacio debajo de la imagen */
+    height: 70%;
+    /* Mantiene la proporción original */
+}
+
+.extra-services h4 {
+    font-size: 1em;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Texto en negrita */
+    color: #30618C;
+    /* Color del título */
+}
+
+.extra-services p {
+    font-size: 0.9em;
+    /* Tamaño de fuente */
+    color: #30618C;
+    /* Color del texto */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #30618C;
+    /* Fondo oscuro */
+    color: #fff;
+    /* Color del texto */
+    text-align: center;
+    /* Texto centrado */
+    padding: 20px;
+    /* Relleno del footer */
+    position: relative;
+    /* Posiciona el footer en relación a su contenedor */
+    bottom: 0;
+    /* Coloca el footer en la parte inferior */
+    width: 100%;
+    /* Ancho completo de la ventana */
+}
+
+footer a {
+    color: #F2A0D5;
+    /* Color de los enlaces */
+    text-decoration: none;
+    /* Sin subrayado */
+    margin: 0 10px;
+    /* Espacio lateral entre enlaces */
+    font-weight: bold;
+    /* Negrita */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Subrayado al pasar el cursor */
+}
+
+footer .social-icons img {
+    width: 30px;
+    /* Ancho de los íconos sociales */
+    margin: 0 10px;
+    /* Espacio entre íconos */
+}
+
+/* Para pantallas pequeñas */
+/* Estilos generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .btn-reservar {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .img-Principal h1 {
+        font-size: 2.5em;
+    }
+
+    .img-Principal p {
+        font-size: 1.1em;
+    }
+
+    .img-Principal .btn-clicaqui {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+    body {
+        font-size: 14px;
+        /* Ajuste de tamaño de fuente */
+    }
+
+    h1 {
+        font-size: 28px;
+        /* Ajusta el tamaño de los encabezados */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .services-section {
+        padding: 20px 5%;
+    }
+
+    .service-container {
+        gap: 10px;
+    }
+
+    .service-item {
+        width: 100%;
+        /* Hace que los items se muestren en una sola columna */
+        flex: 1 1 100%;
+        /* Se ajusta a todo el ancho */
+        margin-bottom: 20px;
+    }
+
+    .service-item img {
+        width: 100%;
+        /* Hace que la imagen ocupe todo el ancho */
+    }
+    .img-Principal {
+        height: 50vh;
+        /* Reduce la altura en dispositivos móviles */
+    }
+    .extra-services {
+        gap: 20px;
+        /* Reduce el espacio entre los elementos */
+    }
+
+    .extra-service-item {
+        width: 100%;
+        /* Hace que los elementos se ajusten a todo el ancho disponible */
+        height: auto;
+        /* Ajusta la altura automáticamente */
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        /* Reducir el padding en pantallas pequeñas */
+    }
+
+    footer .social-icons img {
+        width: 25px;
+        /* Reducir el tamaño de los íconos sociales */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header a img {
+        width: 120px;
+        /* Ajusta el logo */
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .btn-reservar {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        padding: 12px 20px;
+    }
+
+    
+
+    .img-Principal h1 {
+        font-size: 2em;
+    }
+
+    .img-Principal p {
+        font-size: 1em;
+    }
+
+    .btn-clicaqui {
+        font-size: 1.1em;
+        
+    }
+}
