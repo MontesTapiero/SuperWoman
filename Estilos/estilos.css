@@ -6,7 +6,7 @@
 body {
     font-family: "F29LT Riwaya Italic"; /* Define la fuente principal para el cuerpo del documento */
     background-color: #f9f9f9; /* Color de fondo para toda la página */
-    color: #333; /* Color de texto general */
+    color: #30618C; /* Color de texto general */
     line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
 }
 p {
@@ -31,7 +31,7 @@ header {
 header h1 {
     font-size: 1.5em; /* Tamaño de fuente para el título en el encabezado */
     font-weight: bold; /* Estilo de fuente en negrita */
-    color: #333; /* Color del título */
+    color: #30618C; /* Color del título */
 }
 header nav {
     margin-left: auto; /* Empuja el elemento nav hacia la izquierda */
@@ -39,7 +39,7 @@ header nav {
 header nav a {
     margin: 0 15px; /* Espacio entre los enlaces de navegación */
     text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #ff4b8b; /* Color de los enlaces de navegación */
+    color: #D948A6; /* Color de los enlaces de navegación */
     font-weight: bold; /* Estilo de fuente en negrita */
 }
 header img {
@@ -49,7 +49,7 @@ header img {
 }
 .btn-reservar {
     padding: 10px 20px; /* Relleno del botón */
-    background-color: #ff4b8b; /* Color de fondo */
+    background-color: #D948A6; /* Color de fondo */
     color: #fff; /* Color del texto */
     border: none; /* Elimina el borde */
     border-radius: 5px; /* Bordes redondeados */
@@ -60,16 +60,17 @@ header img {
 
 /* Hero */
 .hero {
-    background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/PrincipalSPA.jpg'); /* Imagen de fondo */
+
+    background-image: url('https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/ImagenPrincipal.jpeg'); /* Imagen de fondo */
     background-size: cover; /* La imagen cubre toda la sección */
     background-position: center; /* Centra la imagen */
-    height: 60vh; /* Altura del 60% de la ventana */
+    height: 80vh; /* Altura del 60% de la ventana */
     display: flex; /* Diseño flexible */
     align-items: center; /* Alineación vertical centrada */
     justify-content: center; /* Alineación horizontal centrada */
-    color: #fff; /* Color del texto */
+    color: #30618C; /* Color del texto */
     text-align: center; /* Texto centrado */
-    padding: 20px; /* Relleno de la sección */
+    padding: 10px; /* Relleno de la sección */
 }
 .hero .hero-image {
     position: absolute; /* Posiciona la imagen en relación al contenedor */
@@ -88,11 +89,11 @@ header img {
 .hero p {
     font-size: 1.2em; /* Tamaño de fuente para el párrafo */
     margin-bottom: 20px; /* Espacio debajo del párrafo */
-    color: #fff; /* Color del texto */
+    color: #30618C; /* Color del texto */
 }
 .hero .btn-cta {
     padding: 10px 20px; /* Relleno del botón */
-    background-color: #ff4b8b; /* Color de fondo */
+    background-color: #D948A6; /* Color de fondo */
     color: #fff; /* Color del texto */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
@@ -131,7 +132,7 @@ header img {
 }
 .jungla .btn-cta {
     padding: 10px 20px; /* Relleno del botón */
-    background-color: #ff4b8b; /* Color de fondo */
+    background-color: #D948A6; /* Color de fondo */
     color: #fff; /* Color del texto */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
@@ -148,7 +149,7 @@ header img {
     font-size: 1.8em; /* Tamaño de fuente */
     margin-bottom: 20px; /* Espacio debajo del título */
     font-weight: bold; /* Negrita */
-    color: #333; /* Color del título */
+    color: #30618C; /* Color del título */
 }
 .service-container {
     display: flex; /* Contenedor flexible */
@@ -176,15 +177,15 @@ header img {
     font-size: 1.3em; /* Tamaño de fuente */
     font-weight: bold; /* Negrita */
     margin-bottom: 10px; /* Espacio debajo del título */
-    color: #333; /* Color del título */
+    color: #30618C; /* Color del título */
 }
 .service-item p {
     font-size: 1em; /* Tamaño de fuente */
-    color: #666; /* Color del texto */
+    color: #30618C; /* Color del texto */
     margin-bottom: 10px; /* Espacio debajo del párrafo */
 }
 .btn-service {
-    background-color: #ff4b8b; /* Color de fondo */
+    background-color: #D948A6; /* Color de fondo */
     color: #fff; /* Color del texto */
     padding: 10px 15px; /* Relleno del botón */
     border: none; /* Sin borde */
@@ -219,16 +220,16 @@ header img {
 .extra-services h4 {
     font-size: 1em; /* Tamaño de fuente */
     font-weight: bold; /* Texto en negrita */
-    color: #333; /* Color del título */
+    color: #30618C; /* Color del título */
 }
 .extra-services p {
     font-size: 0.9em; /* Tamaño de fuente */
-    color: #666; /* Color del texto */
+    color: #30618C; /* Color del texto */
 }
 
 /* Estilos para el footer */
 footer {
-    background-color: #333; /* Fondo oscuro */
+    background-color: #30618C; /* Fondo oscuro */
     color: #fff; /* Color del texto */
     text-align: center; /* Texto centrado */
     padding: 20px; /* Relleno del footer */
@@ -237,7 +238,7 @@ footer {
     width: 100%; /* Ancho completo de la ventana */
 }
 footer a {
-    color: #ff4b8b; /* Color de los enlaces */
+    color: #F2A0D5; /* Color de los enlaces */
     text-decoration: none; /* Sin subrayado */
     margin: 0 10px; /* Espacio lateral entre enlaces */
     font-weight: bold; /* Negrita */
@@ -262,7 +263,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none; /* Sin subrayado */
-    color: #333; /* Color de los enlaces */
+    color: #30618C; /* Color de los enlaces */
 }
 
 /* Imagen en Hero */
@@ -302,7 +303,7 @@ nav ul li a {
     width: 100%; /* Ocupa todo el ancho disponible */
 }
 .search-bar button {
-    background-color: #ff4b8b; /* Color de fondo del botón */
+    background-color: #D948A6; /* Color de fondo del botón */
     color: white; /* Color del texto */
     border: none; /* Sin borde */
     padding: 8px 15px; /* Relleno del botón */
@@ -311,7 +312,7 @@ nav ul li a {
     margin-left: 10px; /* Espacio a la izquierda del botón */
 }
 .search-bar button:hover {
-    background-color: #e0437a; /* Color de fondo en hover */
+    background-color: #D948A6; /* Color de fondo en hover */
 }
 
 /* Servicios */
@@ -372,11 +373,11 @@ nav ul li a {
 .service-text h3 {
     margin: 0; /* Sin margen superior */
     font-size: 18px; /* Tamaño de fuente */
-    color: #333; /* Color del texto */
+    color: #30618C; /* Color del texto */
 }
 .service-text p {
     font-size: 14px; /* Tamaño de fuente */
-    color: #555; /* Color del texto */
+    color: #30618C; /* Color del texto */
 }
 
 /* Paginación */
@@ -389,12 +390,12 @@ nav ul li a {
     margin: 0 5px; /* Espacio lateral entre enlaces */
     padding: 8px 12px; /* Relleno de cada enlace */
     border: 1px solid #ddd; /* Borde del enlace */
-    color: #333; /* Color del texto */
+    color: #30618C; /* Color del texto */
     text-decoration: none; /* Sin subrayado */
     border-radius: 5px; /* Bordes redondeados */
 }
 .pagination a.active {
-    background-color: #ff0077; /* Color de fondo para el enlace activo */
+    background-color: #F2A0D5; /* Color de fondo para el enlace activo */
     color: white; /* Color del texto del enlace activo */
 }
 
@@ -402,7 +403,7 @@ nav ul li a {
 .navbar {
     display: flex; /* Elementos alineados en fila */
     justify-content: space-between; /* Espacio entre los extremos */
-    background-color: #333; /* Fondo oscuro */
+    background-color: #30618C; /* Fondo oscuro */
     padding: 15px 30px; /* Relleno en los extremos */
 }
 .navbar a {
@@ -411,7 +412,7 @@ nav ul li a {
     padding: 10px 20px; /* Relleno alrededor del enlace */
 }
 .navbar a:hover {
-    background-color: #444; /* Color de fondo en hover */
+    background-color: #30618C; /* Color de fondo en hover */
     border-radius: 5px; /* Bordes redondeados al pasar el cursor */
 }
 
@@ -432,7 +433,7 @@ nav ul li a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 .calendar .day.today {
-    background-color: #ff4b8b; /* Fondo para el día actual */
+    background-color: #D948A6; /* Fondo para el día actual */
     color: #fff; /* Color del texto en el día actual */
 }
 
@@ -444,18 +445,18 @@ nav ul li a {
     list-style: none; /* Sin viñetas */
 }
 .breadcrumb li {
-    color: #333; /* Color del texto */
+    color: #30618C; /* Color del texto */
     font-size: 0.9em; /* Tamaño de fuente */
 }
 .breadcrumb li + li::before {
     content: ">"; /* Separador entre elementos */
     margin: 0 5px; /* Espacio alrededor del separador */
-    color: #999; /* Color del separador */
+    color: #30618C; /* Color del separador */
 }
 
 /* Botones */
 .button-primary {
-    background-color: #ff0077; /* Fondo principal */
+    background-color: #D948A6; /* Fondo principal */
     color: #fff; /* Color del texto */
     border: none; /* Sin borde */
     padding: 10px 20px; /* Relleno dentro del botón */
@@ -464,10 +465,10 @@ nav ul li a {
     font-size: 1em; /* Tamaño de fuente */
 }
 .button-primary:hover {
-    background-color: #e0437a; /* Fondo en hover */
+    background-color: #D948A6; /* Fondo en hover */
 }
 .button-secondary {
-    background-color: #333; /* Fondo secundario */
+    background-color: #30618C; /* Fondo secundario */
     color: #fff; /* Color del texto */
     border: none; /* Sin borde */
     padding: 10px 20px; /* Relleno dentro del botón */
@@ -476,7 +477,7 @@ nav ul li a {
     font-size: 1em; /* Tamaño de fuente */
 }
 .button-secondary:hover {
-    background-color: #444; /* Fondo en hover */
+    background-color: #30618C; /* Fondo en hover */
 }
 
 /* Formularios */
@@ -501,7 +502,7 @@ nav ul li a {
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    border-color: #ff4b8b; /* Borde en foco */
+    border-color: #D948A6; /* Borde en foco */
     outline: none; /* Sin borde adicional en foco */
 }
 
@@ -537,18 +538,18 @@ nav ul li a {
     font-size: 1.2em; /* Tamaño de fuente del título */
     font-weight: bold; /* Título en negrita */
     margin-bottom: 10px; /* Espacio inferior del título */
-    color: #333; /* Color del título */
+    color: #30618C; /* Color del título */
 }
 .card-content {
     font-size: 0.9em; /* Tamaño de fuente del contenido */
-    color: #666; /* Color del texto */
+    color: #30618C; /* Color del texto */
 }
 .card-footer {
     text-align: right; /* Alineación a la derecha */
     margin-top: 15px; /* Espacio superior */
 }
 .card-footer a {
-    color: #ff4b8b; /* Color del enlace en el footer */
+    color: #D948A6; /* Color del enlace en el footer */
     text-decoration: none; /* Sin subrayado */
 }
 
@@ -585,12 +586,12 @@ th, td {
     font-size: 14px; /* Tamaño de fuente */
 }
 th {
-    background-color: #e0437a; /* Color de fondo de las celdas de encabezado */
+    background-color: #D948A6; /* Color de fondo de las celdas de encabezado */
     color: white; /* Texto blanco en el encabezado */
 }
 td {
-    background-color: #60a3bc; /* Fondo de las celdas de datos */
-    color: #e0437a; /* Color del texto */
+    background-color: #94E1F2; /* Fondo de las celdas de datos */
+    color: #D948A6; /* Color del texto */
     width: 150%; /* Ancho específico */
 }
 
@@ -606,7 +607,7 @@ tr:nth-child(even) {
 
 /* Resalta la fila al pasar el ratón */
 tr:hover {
-    background-color: #60a3bc; /* Fondo azul en hover */
+    background-color: #94E1F2; /* Fondo azul en hover */
     color: #fff; /* Texto blanco en hover */
 }
 
