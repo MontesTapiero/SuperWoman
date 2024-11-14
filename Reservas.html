@@ -7,7 +7,8 @@
     <link href="https://db.onlinewebfonts.com/c/a831675c355af267d4dade89bf89e1f2?family=F29LT+Riwaya+Italic" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/19124edd5c00bc200fbe44c474ad012f?family=Source+Serif+Pro" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Estilos/estilos.css">
+    <link rel="stylesheet" href="Estilos/estilo_reservas.css">
+    <link rel="stylesheet" href="Estilos/component_Page.css">
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
             <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/logoTransparente.png" alt="logo" width="160vh"> 
         </a>
         <nav>
-            <a href="Inicio.html">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="Reservas.html">Reservas</a>
             <a href="Nosotros.html">Nosotros</a>
             <a href="Servicios.html">Servicios</a>
@@ -24,80 +25,75 @@
         <a href="Reservas.html" class="btn-reservar">Reservar Ahora</a>
     </header>
     
-<section class="reservation">
-    <div class="container">
-        <h1 class="title">Reserva tu Cita</h1>
-        <form action="#">
-            <div class="form-group">
-                <label for="fecha">Selecciona la fecha de tu cita:</label>
-                <input type="date" id="fecha" name="fecha" required>
+    <body>
+        <div class="service-container">
+            <div class="service-item">
+        <h2>CHAPINERO</h2>
+        <table>
+            <tr>
+                <th>Horario:</th>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td>08:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>08:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>08:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>08:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>08:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>08:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>09:00 - 19:00</td>
+            </tr>
+            <tr>
+                <td>Festivos</td>
+                <td>09:00 - 19:00</td>
+            </tr>
+            <tr>
+                <th>Ciudad:</th>
+                <td>Bogotá</td>
+            </tr>
+            <tr>
+                <th>Dirección:</th>
+                <td>Calle 67#8-12, Local 2</td>
+            </tr>
+            <tr>
+                <th>Teléfono:</th>
+                <td>3124156372</td>
+            </tr>
+            <tr>
+                <th>Zona:</th>
+                <td>"NORTE"</td>
+            </tr>
+            <tr>
+                <th>Correo:</th>
+                <td>servicioalcliente@superwoman.com.co</td>
+            </tr>
+            <tr>
+                <th>Parqueadero:</th>
+                <td>Cuenta con Parqueadero</td>
+            </tr>
+        </table>
             </div>
-            <button type="submit">Confirmar Reserva</button>
-        </form>
-    </div>
-     <!-- Incluir el archivo JavaScript de Flatpickr desde CDN -->
-     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-     <script>
-        // Inicializar Flatpickr en el campo de fecha
-        flatpickr("#fecha", {
-            enableTime: false,      // Desactiva la selección de hora
-            dateFormat: "Y-m-d",    // Formato de fecha (Año-Mes-Día)
-            minDate: "today",       // No se pueden seleccionar fechas pasadas
-            locale: "es",           // Establecer el idioma a español
-        });
-    </script>
-    <h2>Selecciona el servicio</h2>
-    <form class="services">
-        <label class="service-option">
-            <input type="radio" name="service" value="manicura-basica">
-            <span>Manicura básica<br><small>30-60 minutos</small></span>
-            <span class="price">$40,000 - $80,000</span>
-        </label>
-        <label class="service-option">
-            <input type="radio" name="service" value="manicura-gel">
-            <span>Manicura con esmalte en gel<br><small>60-90 minutos</small></span>
-            <span class="price">$80,000 - $150,000</span>
-        </label>
-        <label class="service-option">
-            <input type="radio" name="service" value="uñas-acrilicas">
-            <span>Uñas acrílicas o de gel<br><small>1.5 - 2 horas</small></span>
-            <span class="price">$150,000 - $300,000</span>
-        </label>
-        <label class="service-option">
-            <input type="radio" name="service" value="esmalte-permanente">
-            <span>Esmaltado permanente<br><small>30-60 minutos</small></span>
-            <span class="price">$70,000 - $120,000</span>
-        </label>
-        <label class="service-option">
-            <input type="radio" name="service" value="diseño-cejas">
-            <span>Diseño y depilación de cejas<br><small>15-30 minutos</small></span>
-            <span class="price">$15,000 - $30,000</span>
-        </label>
-        <label class="service-option">
-            <input type="radio" name="service" value="tintura-cejas">
-            <span>Tintura de cejas<br><small>30 minutos</small></span>
-            <span class="price">$20,000 - $40,000</span>
-        </label>
-        <label class="service-option">
-            <input type="radio" name="service" value="microblading">
-            <span>Microblading<br><small>2-3 horas</small></span>
-            <span class="price">$600,000 - $1,200,000 (incluye retoques)</span>
-        </label>
-        <div class="actions">
-            <button type="button" class="add-service">Añade otro servicio</button>
-            <button type="submit" class="continue">Continuar</button>
-        </div>
-    </form>
-</section>
-<footer>
-    <p>&copy; 2024 Super Woman Spa. Todos los derechos reservados.</p>
-    <div class="social-icons">
-        <a href="https://facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
-        <a href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-        <a href="https://twitter.com" target="_blank"><img src="https://pbs.twimg.com/media/F1zrsq8XsAUU7Lw?format=jpg&name=large" alt="Twitter"></a>
-    </div>
-    <p><a href="mailto:contacto@superwomanspa.com">Contacto</a> | <a href="#politica-privacidad">Política de Privacidad</a></p>
-</footer>
+            </div>
+        </body>
+        </html>
 </body>
 </html>
