@@ -76,8 +76,8 @@ header img {
     position: absolute; /* Posiciona la imagen en relación al contenedor */
     top: 0; /* Alineación superior */
     left: 0; /* Alineación izquierda */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
+    width: 60%; /* Ancho completo */
+    height: 60%; /* Altura completa */
     object-fit: cover; /* Cubre toda el área del contenedor */
     z-index: -1; /* Coloca la imagen en el fondo */
 }
