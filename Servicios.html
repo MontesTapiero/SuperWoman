@@ -26,102 +26,29 @@
         <a href="Reservas.html" class="btn-reservar">Reservar Ahora</a>
     </header>
     
-<section class="services">
-    <div class="service-container">
-        <div class="service-item">
-            <div>
-                <h2>Servicios SuperWoman</h2>
-                <h3>¡Tus manos son tu carta de presentación!</h3>
-                <p>Desde manicuras clásicas hasta diseños personalizados y de larga duración. Haz que tus manos hablen por ti.</p>
-                <div class="services-container">
-                    <div class="service-card">
-                        <br>
-                    <main class="location-container">
-                        <section class="location-info">
-                            <h1 class="location-name">CHAPINERO</h1>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Horario:</td>
-                                        <td>Lunes:</td>
-                                        <td><span>08:00 - 20:00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Horario:</td>
-                                        <td>Lunes:<hr>Martes:<br>Miercoles:<br>Jueves:<br>Viernes:<br>Sabado:<br>Domingo:<br>Festivos:</td>
-                                        <td>08:00 - 20:00<br>08:00 - 20:00<br>08:00 - 20:00<br>08:00 - 20:00<br>08:00 - 20:00<br>08:00 - 20:00<br>09:00 - 17:00<br>09:00 - 17:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Juan</td>
-                                        <td>25</td>
-                                        <td>Barcelona</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maria</td>
-                                        <td>28</td>
-                                        <td>Sevilla</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-            
-            </div>
-        </div>
-    
-    
-                <div class="details">
-                    <p><strong>Horario:</strong></p>
-                    <ul class="schedule">
-                        <li>Lunes: <span>08:00 - 20:00</span></li>
-                        <li>Martes: <span>08:00 - 20:00</span></li>
-                        <li>Miércoles: <span>08:00 - 20:00</span></li>
-                        <li>Jueves: <span>08:00 - 20:00</span></li>
-                        <li>Viernes: <span>08:00 - 20:00</span></li>
-                        <li>Sábado: <span>08:00 - 20:00</span></li>
-                        <li>Domingo: <span>09:00 - 19:00</span></li>
-                        <li>Festivos: <span>09:00 - 19:00</span></li>
-                    </ul>
-                    <p><strong>Ciudad:</strong> Bogotá</p>
-                    <p><strong>Dirección:</strong> Calle 67#8-12, Local 2</p>
-                    <p><strong>Teléfono:</strong> 3124156372</p>
-                    <p><strong>Zona:</strong> "NORTE"</p>
-                    <p><strong>Correo:</strong> chapinero@superwow.com.co</p>
-                    <p><strong>Parqueadero:</strong> Cuenta con Parqueadero</p>
-                </div>
-                <div class="buttons">
-                    <button class="back-btn">⬅ REGRESAR</button>
-                    <button class="reserve-btn">RESERVA TU CITA</button>
-                </div>
-            </section>
-            <section class="location-image">
-                <img src="tu-imagen.jpg" alt="Foto de la ubicación en Chapinero">
-            </section>
-        </main>
+    <body>
 
-        <footer class="footer">
-            <a href="#">Acerca de nosotros</a>
-            <a href="#">Treatments</a>
-            <a href="#">Día de SPA</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Descuentos</a>
-            <a href="#">Comprar</a>
-            <a href="#">Suscriptores</a>
-            <a href="#">Ubicación</a>
-            <a href="#">Contáctenos</a>
-        </footer>
-        
-        <div class="social-icons">
-            <a href="#">&#x1F30E;</a>
-            <a href="#">&#x1F4F7;</a>
-            <a href="#">&#x1F4E7;</a>
-        </div>
-        
-        <p style="text-align: center; margin: 20px 0;">&copy;2024 SuperWoman</p>
-</body>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Super Woman Spa. Todos los derechos reservados.</p>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="https://pbs.twimg.com/media/F1zrsq8XsAUU7Lw?format=jpg&name=large" alt="Twitter"></a>
+    </div>
+    <p><a href="mailto:contacto@superwomanspa.com">Contacto</a> | <a href="Página de error.html">Política de Privacidad</a></p>
+</footer>
+<script>
+    // Obtener el botón del menú hamburguesa y el contenedor del menú
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('header nav');
+
+    // Agregar un evento para alternar la clase 'open' cuando se haga clic en el botón hamburguesa
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open'); // Alternar la visibilidad del menú
+    });
+</script>
+
+    </body>
 </html>
