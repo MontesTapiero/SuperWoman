@@ -92,7 +92,9 @@
         <a href="Reservas.html" class="btn-reservar">Reservar Ahora</a>
     </header>
     <section>
-    <h1>¡Califícanos!</h1>
+    <center>
+        <br><br>
+    <h1>¡Califícanos!</h1><br><br>
     <p>Tu opinión nos ayuda a mejorar la experiencia en Super Woman Spa.</p>
 
     <!-- Sección de calificación de estrellas -->
@@ -114,7 +116,9 @@
     <div class="thank-you-message" id="thankYouMessage">
         ¡Gracias por tu calificación! 
     </div>
-    
+    <br><br>
+    </center>
+    </section>
 
     <script>
         // JavaScript para captura de estrellas y envío de calificación
@@ -158,25 +162,27 @@
         }
     </script>
 
-<footer class="footer">
-    <a href="#">Acerca de nosotros</a>
-    <a href="#">Treatments</a>
-    <a href="#">Día de SPA</a>
-    <a href="#">Ofertas</a>
-    <a href="#">Descuentos</a>
-    <a href="#">Comprar</a>
-    <a href="#">Suscriptores</a>
-    <a href="#">Ubicación</a>
-    <a href="#">Contáctenos</a>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Super Woman Spa. Todos los derechos reservados.</p>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="https://pbs.twimg.com/media/F1zrsq8XsAUU7Lw?format=jpg&name=large" alt="Twitter"></a>
+    </div>
+    <p><a href="mailto:contacto@superwomanspa.com">Contacto</a> | <a href="Página de error.html">Política de Privacidad</a></p>
 </footer>
+<script>
+    // Obtener el botón del menú hamburguesa y el contenedor del menú
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('header nav');
 
-<div class="social-icons">
-    <a href="#">&#x1F30E;</a>
-    <a href="#">&#x1F4F7;</a>
-    <a href="#">&#x1F4E7;</a>
-</div>
+    // Agregar un evento para alternar la clase 'open' cuando se haga clic en el botón hamburguesa
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open'); // Alternar la visibilidad del menú
+    });
+</script>
 
-<p style="text-align: center; margin: 20px 0;">&copy;2024 SuperWoman</p>
 
 </body>
 </html>

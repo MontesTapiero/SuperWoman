@@ -8,7 +8,44 @@
     <link href="https://db.onlinewebfonts.com/c/19124edd5c00bc200fbe44c474ad012f?family=Source+Serif+Pro" rel="stylesheet">
     <link rel="stylesheet" href="Estilos/estilos.css">
     <style>
-        
+
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-category {
+            margin-bottom: 2rem;
+        }
+
+        .service-category h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #D948A6;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .service img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .service-details {
+            flex: 1;
+        }
+
     </style>
 </head>
 <body>
@@ -26,102 +63,168 @@
         <a href="Reservas.html" class="btn-reservar">Reservar Ahora</a>
     </header>
     
-<section class="services">
-    <div class="service-container">
-        <div class="service-item">
-            <div>
-                <h2>Servicios SuperWoman</h2>
-                <h3>¡Tus manos son tu carta de presentación!</h3>
-                <p>Desde manicuras clásicas hasta diseños personalizados y de larga duración. Haz que tus manos hablen por ti.</p>
-                <div class="services-container">
-                    <div class="service-card">
-                        <br>
-                    <main class="location-container">
-                        <section class="location-info">
-                            <h1 class="location-name">CHAPINERO</h1>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Horario:</td>
-                                        <td>Lunes:</td>
-                                        <td><span>08:00 - 20:00</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Horario:</td>
-                                        <td>Lunes:<hr>Martes:<br>Miercoles:<br>Jueves:<br>Viernes:<br>Sabado:<br>Domingo:<br>Festivos:</td>
-                                        <td>08:00 - 20:00<br>08:00 - 20:00<br>08:00 - 20:00<br>08:00 - 20:00<br>08:00 - 20:00<br>08:00 - 20:00<br>09:00 - 17:00<br>09:00 - 17:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Juan</td>
-                                        <td>25</td>
-                                        <td>Barcelona</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maria</td>
-                                        <td>28</td>
-                                        <td>Sevilla</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-            
+    <div class="container">
+        <!-- Servicios de Cejas -->
+        <div class="service-category">
+            <h2>Servicios de Cejas</h2>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Diseñodecejas.jpg" alt="Diseño de cejas">
+                <div class="service-details">
+                    <h3>Diseño de Cejas</h3>
+                    <p>Personalizamos el diseño perfecto para tus cejas. </p>
+                    <span>$25,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Tintedecejas.jpg" alt="Tinte de cejas">
+                <div class="service-details">
+                    <h3>Tinte de Cejas</h3>
+                    <p>Realza el color natural de tus cejas con tintes orgánicos.</p>
+                    <span>$30,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Microblanding.jpg" alt="Microblading">
+                <div class="service-details">
+                    <h3>Microblading</h3>
+                    <p>Técnica semipermanente para cejas perfectas por más tiempo.</p>
+                    <span>$180,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Depilacionconhilo.jpeg" alt="Depilación con hilo">
+                <div class="service-details">
+                    <h3>Depilación con Hilo</h3>
+                    <p>Elimina vellos no deseados de manera precisa y suave.</p>
+                    <span>$20,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Laminadodecejas.png" alt="Laminado de cejas">
+                <div class="service-details">
+                    <h3>Laminado de Cejas</h3>
+                    <p>Controla y peina tus cejas para un look impecable.</p>
+                    <span>$40,000 COP</span>
+                </div>
             </div>
         </div>
-    
-    
-                <div class="details">
-                    <p><strong>Horario:</strong></p>
-                    <ul class="schedule">
-                        <li>Lunes: <span>08:00 - 20:00</span></li>
-                        <li>Martes: <span>08:00 - 20:00</span></li>
-                        <li>Miércoles: <span>08:00 - 20:00</span></li>
-                        <li>Jueves: <span>08:00 - 20:00</span></li>
-                        <li>Viernes: <span>08:00 - 20:00</span></li>
-                        <li>Sábado: <span>08:00 - 20:00</span></li>
-                        <li>Domingo: <span>09:00 - 19:00</span></li>
-                        <li>Festivos: <span>09:00 - 19:00</span></li>
-                    </ul>
-                    <p><strong>Ciudad:</strong> Bogotá</p>
-                    <p><strong>Dirección:</strong> Calle 67#8-12, Local 2</p>
-                    <p><strong>Teléfono:</strong> 3124156372</p>
-                    <p><strong>Zona:</strong> "NORTE"</p>
-                    <p><strong>Correo:</strong> chapinero@superwow.com.co</p>
-                    <p><strong>Parqueadero:</strong> Cuenta con Parqueadero</p>
-                </div>
-                <div class="buttons">
-                    <button class="back-btn">⬅ REGRESAR</button>
-                    <button class="reserve-btn">RESERVA TU CITA</button>
-                </div>
-            </section>
-            <section class="location-image">
-                <img src="tu-imagen.jpg" alt="Foto de la ubicación en Chapinero">
-            </section>
-        </main>
 
-        <footer class="footer">
-            <a href="#">Acerca de nosotros</a>
-            <a href="#">Treatments</a>
-            <a href="#">Día de SPA</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Descuentos</a>
-            <a href="#">Comprar</a>
-            <a href="#">Suscriptores</a>
-            <a href="#">Ubicación</a>
-            <a href="#">Contáctenos</a>
-        </footer>
-        
-        <div class="social-icons">
-            <a href="#">&#x1F30E;</a>
-            <a href="#">&#x1F4F7;</a>
-            <a href="#">&#x1F4E7;</a>
+        <!-- Servicios de Uñas -->
+        <div class="service-category">
+            <h2>Servicios de Uñas</h2>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/ManicureTradicional.jpeg" alt="Manicure tradicional">
+                <div class="service-details">
+                    <h3>Manicure Tradicional</h3>
+                    <p>Cuidado básico y embellecimiento de tus uñas.</p>
+                    <span>$20,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Manicuresemipermanente.jpg" alt="Manicure semipermanente">
+                <div class="service-details">
+                    <h3>Manicure Semipermanente</h3>
+                    <p>Uñas impecables y duraderas por semanas.</p>
+                    <span>$50,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Pedicure.jpg" alt="Pedicure">
+                <div class="service-details">
+                    <h3>Pedicure</h3>
+                    <p>Cuidado completo para pies suaves y saludables.</p>
+                    <span>$30,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Uñasacrilicaspies.jpg" alt="Uñas acrílicas">
+                <div class="service-details">
+                    <h3>Uñas Acrílicas</h3>
+                    <p>Extensiones para unas uñas largas y elegantes.</p>
+                    <span>$80,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Uñaspersonalizadas.jpg" alt="Decoración de uñas">
+                <div class="service-details">
+                    <h3>Decoración de Uñas</h3>
+                    <p>Arte personalizado para un look único.</p>
+                    <span>$15,000 COP</span>
+                </div>
+            </div>
         </div>
-        
-        <p style="text-align: center; margin: 20px 0;">&copy;2024 SuperWoman</p>
+
+        <!-- Servicios de Pestañas -->
+        <div class="service-category">
+            <h2>Servicios de Pestañas</h2>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Extensionesdepestañas1.jpg" alt="Extensiones de pestañas clásicas">
+                <div class="service-details">
+                    <h3>Extensiones Clásicas</h3>
+                    <p>Un look natural con pestañas más largas y definidas.</p>
+                    <span>$100,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Volumenruso.jpg" alt="Extensiones volumen ruso">
+                <div class="service-details">
+                    <h3>Extensiones Volumen Ruso</h3>
+                    <p>Un look más denso y dramático para tus pestañas.</p>
+                    <span>$150,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Lifting.jpg" alt="Lifting de pestañas">
+                <div class="service-details">
+                    <h3>Lifting de Pestañas</h3>
+                    <p>Riza tus pestañas naturales de forma semipermanente.</p>
+                    <span>$80,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Tintedepestañas.jpg" alt="Tintura de pestañas">
+                <div class="service-details">
+                    <h3>Tintura de Pestañas</h3>
+                    <p>Oscurece y define tus pestañas para un look más intenso.</p>
+                    <span>$50,000 COP</span>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://raw.githubusercontent.com/MontesTapiero/SuperWoman/refs/heads/main/img/Retirodeextensiones.jpeg" alt="Retiro de extensiones">
+                <div class="service-details">
+                    <h3>Retiro de Extensiones</h3>
+                    <p>Remueve extensiones de forma segura y sin dañar tus pestañas.</p>
+                    <span>$30,000 COP</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
+
+    <body>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Super Woman Spa. Todos los derechos reservados.</p>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="https://pbs.twimg.com/media/F1zrsq8XsAUU7Lw?format=jpg&name=large" alt="Twitter"></a>
+    </div>
+    <p><a href="mailto:contacto@superwomanspa.com">Contacto</a> | <a href="Página de error.html">Política de Privacidad</a></p>
+</footer>
+<script>
+    // Obtener el botón del menú hamburguesa y el contenedor del menú
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('header nav');
+
+    // Agregar un evento para alternar la clase 'open' cuando se haga clic en el botón hamburguesa
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open'); // Alternar la visibilidad del menú
+    });
+</script>
+
+    </body>
 </html>
